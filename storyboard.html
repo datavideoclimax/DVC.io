@@ -1,0 +1,326 @@
+<head>
+    <title>Data Video Climax</title>
+</head>
+
+<style>
+     
+     .top-nav {
+            background-color: #574be1;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 5px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .top-nav.transparent {
+            background-color: rgba(87, 75, 225, 0.5);
+        }
+        
+        .top-nav .logo {
+            font-size: 20px;
+            font-weight: bold;
+            background: linear-gradient(45deg, #1e90ff, #00bfff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .top-nav .nav-links {
+            display: flex;
+        }
+        
+        .top-nav a {
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        
+        .top-nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to bottom, #E6E6FA, #FFFFFF);
+        min-height: 100vh;
+    }
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
+    }
+    h1 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 30px;
+    }
+    .text-section {
+        margin-bottom: 30px;
+        line-height: 1.6;
+        color: #444;
+        text-align: center;
+    }
+    .image-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .image-item {
+        width: 22%;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    .image-item img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .image-description {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0,0,0,0.7);
+        color: white;
+        padding: 5px;
+        font-size: 14px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        text-align: center;
+    }
+</style>
+
+<div class="top-nav">
+    <div class="logo">Data Video Climax</div>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="storyboard.html">Storyboard</a>
+    </div>
+</div>
+
+<div class="container">
+    <h1 style="margin-top: 60px;">故事板</h1>
+    
+    <div class="image-module">
+        <div class="text-section">
+            <p>这是第一个图片模块的介绍文本。在这里，您可以描述接下来展示的图片内容，提供背景信息或解释其重要性。</p>
+        </div>
+        <div class="image-gallery">
+            <div class="image-item">
+                <div class="image-description">恐惧情绪的视觉表现</div>
+                <img src="storyboard/fear.png" alt="恐惧情绪图片" class="expandable-image">
+                <div class="expand-icon">&#128269;</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="image-module">
+        <div class="text-section">
+            <p>这是第二个图片模块的介绍文本。您可以在这里解释下面图片的主题，或者讨论它与整个故事板的关系。</p>
+        </div>
+        <div class="image-gallery">
+            <div class="image-item">
+                <div class="image-description">第二个主题的描述</div>
+                <img src="image2.jpg" alt="第二个主题图片" class="expandable-image">
+                <div class="expand-icon">&#128269;</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="image-module">
+        <div class="text-section">
+            <p>这是第三个图片模块的介绍文本。利用这个空间来为观众设置期望，或者提供一些有趣的背景信息。</p>
+        </div>
+        <div class="image-gallery">
+            <div class="image-item">
+                <div class="image-description">第三个主题的描述</div>
+                <img src="image3.jpg" alt="第三个主题图片" class="expandable-image">
+                <div class="expand-icon">&#128269;</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="image-module">
+        <div class="text-section">
+            <p>这是第四个图片模块的介绍文本。您可以在这里继续描述故事的发展或者介绍新的主题。</p>
+        </div>
+        <div class="image-gallery">
+            <div class="image-item">
+                <div class="image-description">第四个主题的描述</div>
+                <img src="image4.jpg" alt="第四个主题图片" class="expandable-image">
+                <div class="expand-icon">&#128269;</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="image-module">
+        <div class="text-section">
+            <p>这是第五个图片模块的介绍文本。在这里，您可以探讨新的观点或者展示不同的场景。</p>
+        </div>
+        <div class="image-gallery">
+            <div class="image-item">
+                <div class="image-description">第五个主题的描述</div>
+                <img src="image5.jpg" alt="第五个主题图片" class="expandable-image">
+                <div class="expand-icon">&#128269;</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="image-module">
+        <div class="text-section">
+            <p>这是第六个图片模块的介绍文本。您可以在这里深入探讨某个特定的主题或者展示一系列相关的图片。</p>
+        </div>
+        <div class="image-gallery">
+            <div class="image-item">
+                <div class="image-description">第六个主题的描述</div>
+                <img src="image6.jpg" alt="第六个主题图片" class="expandable-image">
+                <div class="expand-icon">&#128269;</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="image-module">
+        <div class="text-section">
+            <p>这是第七个图片模块的介绍文本。您可以利用这个空间来展示更多的细节或者引入新的元素。</p>
+        </div>
+        <div class="image-gallery">
+            <div class="image-item">
+                <div class="image-description">第七个主题的描述</div>
+                <img src="image7.jpg" alt="第七个主题图片" class="expandable-image">
+                <div class="expand-icon">&#128269;</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="image-module">
+        <div class="text-section">
+            <p>这是第八个也是最后一个图片模块的介绍文本。您可以在这里总结前面的内容，或者为整个故事板画上一个圆满的句号。</p>
+        </div>
+        <div class="image-gallery">
+            <div class="image-item">
+                <div class="image-description">第八个主题的描述</div>
+                <img src="image8.jpg" alt="第八个主题图片" class="expandable-image">
+                <div class="expand-icon">&#128269;</div>
+            </div>
+        </div>
+    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="fullscreen-overlay" class="fullscreen-overlay">
+    <img id="fullscreen-image" src="" alt="全屏图片">
+    <span class="close-button">&times;</span>
+</div>
+
+<script>
+    window.addEventListener('scroll', function() {
+        var nav = document.querySelector('.top-nav');
+        if (window.scrollY > 50) {
+            nav.classList.add('transparent');
+        } else {
+            nav.classList.remove('transparent');
+        }
+    });
+
+    // 确保图片居中且大小适中
+    function adjustImageSize() {
+        var imageItems = document.querySelectorAll('.image-item');
+        var containerWidth = document.querySelector('.container').offsetWidth;
+        var targetWidth = Math.min(containerWidth * 0.8, 800); // 最大宽度为800px或容器宽度的80%
+        var targetHeight = targetWidth * 0.75; // 假设图片比例为4:3
+
+        imageItems.forEach(function(item) {
+            var img = item.querySelector('img');
+            img.style.width = targetWidth + 'px';
+            img.style.height = targetHeight + 'px';
+            img.style.objectFit = 'cover';
+            item.style.width = targetWidth + 'px';
+            item.style.margin = '0 auto 20px';
+        });
+    }
+
+    // 页面加载时调整图片大小
+    window.addEventListener('load', adjustImageSize);
+
+    // 窗口大小改变时调整图片大小
+    window.addEventListener('resize', adjustImageSize);
+
+    // 点击图片展开全屏
+    var expandableImages = document.querySelectorAll('.expandable-image');
+    var fullscreenOverlay = document.getElementById('fullscreen-overlay');
+    var fullscreenImage = document.getElementById('fullscreen-image');
+    var closeButton = document.querySelector('.close-button');
+
+    expandableImages.forEach(function(img) {
+        img.addEventListener('click', function() {
+            fullscreenImage.src = this.src;
+            fullscreenOverlay.style.display = 'flex';
+        });
+    });
+
+    closeButton.addEventListener('click', function() {
+        fullscreenOverlay.style.display = 'none';
+    });
+
+    fullscreenOverlay.addEventListener('click', function(e) {
+        if (e.target === fullscreenOverlay) {
+            fullscreenOverlay.style.display = 'none';
+        }
+    });
+</script>
+
+<style>
+    .image-item {
+        position: relative;
+        cursor: pointer;
+    }
+    .expand-icon {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        background-color: rgba(255, 255, 255, 0.7);
+        border-radius: 50%;
+        padding: 5px;
+        font-size: 20px;
+    }
+    .fullscreen-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+    #fullscreen-image {
+        max-width: 90%;
+        max-height: 90%;
+        object-fit: contain;
+    }
+    .close-button {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        color: white;
+        font-size: 40px;
+        cursor: pointer;
+    }
+</style>

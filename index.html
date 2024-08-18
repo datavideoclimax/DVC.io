@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Video Climax</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            background-color: #bde0fe;
+        }
+        
+        .top-nav {
+            background-color: #ffc8dd;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 6.5px 6.5px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .top-nav.transparent {
+            background-color: rgba(255, 211, 241, 0.459);
+        }
+        
+        .top-nav .logo {
+            font-size: 20px;
+            font-weight: bold;
+            background: linear-gradient(45deg, #ffffff, #ffffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .top-nav .nav-links {
+            display: flex;
+        }
+        
+        .top-nav a {
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        
+        .top-nav a:hover {
+            background-color: #f9b1cc;
+            color: black;
+        }
+        
+        .side-nav {
+            height: 100%;
+            width: 200px;
+            position: fixed;
+            z-index: 1;
+            top: 60px;
+            left: 0;
+            background-color: #a2d2ff;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+        
+        .side-nav a {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #f2f2f2;
+            display: block;
+        }
+        
+        .side-nav a:hover {
+            color: #f1f1f1;
+        }
+        
+        .main {
+            margin-left: 200px;
+            padding: 60px 10px 0;
+        }
+        
+        .card {
+            background-color: transparent;
+            width: 300px;
+            height: 200px;
+            perspective: 1000px;
+            margin: 15px;
+            display: inline-block;
+        }
+        
+        .card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+        
+        .card:hover .card-inner {
+            transform: rotateY(180deg);
+        }
+        
+        .card-front, .card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+        
+        .card-front {
+            background-color: #bbb;
+            color: black;
+        }
+        
+        .card-back {
+            background-color: #9370db;
+            color: white;
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="top-nav">
+        <div class="logo">Data Video Climax</div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#storyboard">Storyboard</a>
+            <script>
+                document.querySelector('a[href="#gallery"]').addEventListener('click', function(e) {
+                    e.preventDefault();
+                    window.location.href = 'gallery.html';
+                });
+                document.querySelector('a[href="#storyboard"]').addEventListener('click', function(e) {
+                    e.preventDefault();
+                    window.location.href = 'storyboard.html';
+                });
+            </script>
+        </div>
+    </div>
+    
+    <script>
+        window.addEventListener('scroll', function() {
+            var nav = document.querySelector('.top-nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('transparent');
+            } else {
+                nav.classList.remove('transparent');
+            }
+        });
+    </script>
+
+    <div class="side-nav">
+        <a href="#sadness" class="emotion-link" data-color="#0000FF">Sadness</a>
+        <a href="#anticipation" class="emotion-link" data-color="#00FF00">Anticipation</a>
+        <a href="#fear" class="emotion-link" data-color="#800080">Fear</a>
+        <a href="#anger" class="emotion-link" data-color="#FF0000">Anger</a>
+        <a href="#joy" class="emotion-link" data-color="#FFFF00">Joy</a>
+        <a href="#trust" class="emotion-link" data-color="#87CEEB">Trust</a>
+        <a href="#surprise" class="emotion-link" data-color="#FFA500">Surprise</a>
+        <a href="#disgust" class="emotion-link" data-color="#8B4513">Disgust</a>
+    </div>
+
+    <style>
+        .emotion-link {
+            transition: color 0.3s ease;
+        }
+    </style>
+
+    <script>
+        document.querySelectorAll('.emotion-link').forEach(link => {
+            link.addEventListener('mouseover', function() {
+                this.style.color = this.getAttribute('data-color');
+            });
+            link.addEventListener('mouseout', function() {
+                this.style.color = '';
+            });
+        });
+    </script>
+
+
+    <div class="main">
+        <section id="sadness">
+            <h2 style="color: rgb(138, 171, 255);">Sadness</h2>
+            <!-- 7个卡片 -->
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" style="background-color: rgb(138, 171, 255);">
+                        <p style="text-align: left; font-size: 1em; color: #ffffff; margin-bottom: 5px;"><strong>&ensp;&ensp;G1.1 Distancing by Pulling Away</strong></p>
+                        <ul style="text-align: left; list-style-type: disc; padding-left: 15px; font-size: 0.000000008em; font-family: serif; margin-top: 2px; color: #ffffff;">
+                            <li><strong>Zoom in to focus on specific sad data points, such as rising unemployment rates or key charts showing economic downturns.</strong></li>
+                            <li><strong>Zooming out provides a broader view, displaying the full scope of the situation and emphasizing feelings of loneliness or helplessness.</strong></li>
+                            <li><strong>Accompany zoom-ins with low and slow musical tempos; as the camera zooms out, the music gradually fades, suggesting that the emotions are dissipating into the vast space.</strong></li>
+                        </ul>
+                    </div>
+                    <div class="card-back">
+                        <video controls style="width: 100%; height: auto;">
+                            <source src="video/Sad-G1.1.mp4" type="video/mp4">
+                            <source src="video/Sad-G1.1.webm" type="video/webm">
+                            您的浏览器不支持 HTML5 视频。
+                            <a href="video/Sad-G1.1.mp4">下载视频</a>
+                        </video>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" style="background-color: rgb(138, 171, 255);">
+                        <p style="text-align: left; font-size: 1em; color: #ffffff; margin-bottom: 5px;"><strong>&ensp;&ensp;G1.2 Fading and Dissolving</strong></p>
+                        <ul style="text-align: left; list-style-type: disc; padding-left: 15px; font-size: 0.000000008em; font-family: serif; margin-top: 2px; color: #ffffff;">
+                            <li><strong>使用渐变效果来表现悲伤情绪的逐渐消散或加深。</strong></li>
+                            <li><strong>通过溶解转场，将悲伤的场景或数据与更积极的画面融合，展示情绪的转变过程。</strong></li>
+                            <li><strong>配合柔和的背景音乐，增强渐变和溶解效果的情感表达。</strong></li>
+                        </ul>
+                    </div>
+                    <div class="card-back">
+                        <video controls style="width: 100%; height: auto;">
+                            <source src="video/G1-2-悲伤缓影.mp4" type="video/mp4">
+                            <source src="video/G1-2-悲伤缓影.webm" type="video/webm">
+                            您的浏览器不支持 HTML5 视频。
+                            <a href="video/G1-2-悲伤缓影.mp4">下载视频</a>
+                        </video>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" style="background-color: rgb(138, 171, 255);">
+                        <p style="text-align: left; font-size: 1em; color: #ffffff; margin-bottom: 5px;"><strong>&ensp;&ensp;G1.3 Slow Motion and Time Lapse</strong></p>
+                        <ul style="text-align: left; list-style-type: disc; padding-left: 15px; font-size: 0.000000008em; font-family: serif; margin-top: 2px; color: #ffffff;">
+                            <li><strong>使用慢动作效果突出悲伤时刻的细节，增强情感共鸣。</strong></li>
+                            <li><strong>通过延时摄影展示悲伤情绪随时间推移的变化，如从悲伤到希望的过渡。</strong></li>
+                            <li><strong>结合音乐节奏，使慢动作和延时效果与音频同步，增强视觉冲击力。</strong></li>
+                        </ul>
+                    </div>
+                    <div class="card-back">
+                        <video controls style="width: 100%; height: auto;">
+                            <source src="video/G1-3-1冷色调表达情感.mp4" type="video/mp4">
+                            <source src="video/G1-3-1冷色调表达情感.webm" type="video/webm">
+                            您的浏览器不支持 HTML5 视频。
+                            <a href="video/G1-3-1冷色调表达情感.mp4">下载视频</a>
+                        </video>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" style="background-color: rgb(138, 171, 255);">
+                        <p style="text-align: left; font-size: 1em; color: #ffffff; margin-bottom: 5px;"><strong>&ensp;&ensp;G1.4 Blurring and Focusing</strong></p>
+                        <ul style="text-align: left; list-style-type: disc; padding-left: 15px; font-size: 0.000000008em; font-family: serif; margin-top: 2px; color: #ffffff;">
+                            <li><strong>使用模糊效果表现悲伤时的思绪混乱或情感模糊。</strong></li>
+                            <li><strong>通过聚焦效果突出关键数据或图表，引导观众注意力。</strong></li>
+                            <li><strong>结合音效，如心跳声，与模糊和聚焦效果同步，增强情感表达。</strong></li>
+                        </ul>
+                    </div>
+                    <div class="card-back">
+                        <video controls style="width: 100%; height: auto;">
+                            <source src="video/G1.3.2 对比色和高饱和度.mp4" type="video/mp4">
+                            <source src="video/G1.3.2 对比色和高饱和度.webm" type="video/webm">
+                            您的浏览器不支持 HTML5 视频。
+                            <a href="video/G1.3.2 对比色和高饱和度.mp4">下载视频</a>
+                        </video>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" style="background-color: rgb(138, 171, 255);">
+                        <p style="text-align: left; font-size: 1em; color: #ffffff; margin-bottom: 5px;"><strong>&ensp;&ensp;G1.5 Color Grading</strong></p>
+                        <ul style="text-align: left; list-style-type: disc; padding-left: 15px; font-size: 0.000000008em; font-family: serif; margin-top: 2px; color: #ffffff;">
+                            <li><strong>使用冷色调（如蓝色、灰色）增强悲伤氛围。</strong></li>
+                            <li><strong>通过色彩渐变展示情绪变化，如从冷色调过渡到暖色调。</strong></li>
+                            <li><strong>结合音乐情绪，使色彩变化与音频同步，增强视觉感染力。</strong></li>
+                        </ul>
+                    </div>
+                    <div class="card-back">
+                        <video controls style="width: 100%; height: auto;">
+                            <source src="video/G1.3.3 色彩深度和情感语义的一致性.mp4" type="video/mp4">
+                            <source src="video/G1.3.3 色彩深度和情感语义的一致性.webm" type="video/webm">
+                            您的浏览器不支持 HTML5 视频。
+                            <a href="video/G1.3.3 色彩深度和情感语义的一致性.mp4">下载视频</a>
+                        </video>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" style="background-color: rgb(138, 171, 255);">
+                        <p style="text-align: left; font-size: 1em; color: #ffffff; margin-bottom: 5px;"><strong>&ensp;&ensp;G1.6 Particle Effects</strong></p>
+                        <ul style="text-align: left; list-style-type: disc; padding-left: 15px; font-size: 0.000000008em; font-family: serif; margin-top: 2px; color: #ffffff;">
+                            <li><strong>使用粒子效果模拟泪水或雨滴，增强悲伤氛围。</strong></li>
+                            <li><strong>通过粒子的聚散展示情绪变化，如从分散到聚集表现希望。</strong></li>
+                            <li><strong>配合柔和的背景音乐，使粒子动画与音频节奏同步。</strong></li>
+                        </ul>
+                    </div>
+                    <div class="card-back">
+                        <video controls style="width: 100%; height: auto;">
+                            <source src="video/G1.4 回忆循环.mp4" type="video/mp4">
+                            <source src="video/G1.4 回忆循环.webm" type="video/webm">
+                            您的浏览器不支持 HTML5 视频。
+                            <a href="video/G1.4 回忆循环.mp4">下载视频</a>
+                        </video>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" style="background-color: rgb(138, 171, 255);">
+                        <p style="text-align: left; font-size: 1em; color: #ffffff; margin-bottom: 5px;"><strong>&ensp;&ensp;G1.7 Parallax Scrolling</strong></p>
+                        <ul style="text-align: left; list-style-type: disc; padding-left: 15px; font-size: 0.000000008em; font-family: serif; margin-top: 2px; color: #ffffff;">
+                            <li><strong>使用视差滚动效果创造深度感，突出悲伤情绪的层次。</strong></li>
+                            <li><strong>通过不同层次的移动速度，展示情绪的复杂性和变化。</strong></li>
+                            <li><strong>配合舒缓的背景音乐，增强视差效果的情感表达。</strong></li>
+                        </ul>
+                    </div>
+                    <div class="card-back">
+                        <video controls style="width: 100%; height: auto;">
+                            <source src="video/G1.5- 数据point循环.mp4" type="video/mp4">
+                            <source src="video/G1.5- 数据point循环.webm" type="video/webm">
+                            您的浏览器不支持 HTML5 视频。
+                            <a href="video/G1.5- 数据point循环.mp4">下载视频</a>
+                        </video>
+                    </div>
+                </div>
+        </section>
+
+        <section id="anticipation">
+            <h2>期待</h2>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" style="background-color: #E6F3FF;">
+                        <p style="text-align: left; font-size: 1.2em; color: #87CEFA;"><strong>G2.1 标题</strong></p>
+                        <ul style="text-align: left; list-style-type: disc; padding-left: 20px; font-size: 0.2em; font-family: Arial, sans-serif;">
+                            <li>描述点1</li>
+                            <li>描述点2</li>
+                            <li>描述点3</li>
+                        </ul>
+                    </div>
+                    <div class="card-back">
+                        <img src="images/anticipation_g2_1.gif" alt="Anticipation-G2.1" width="100%" height="100%">
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" style="background-color: #E6F3FF;">
+                        <p style="text-align: left; font-size: 1.2em; color: #87CEFA;"><strong>G2.2 标题</strong></p>
+                        <ul style="text-align: left; list-style-type: disc; padding-left: 20px; font-size: 0.2em; font-family: Arial, sans-serif;">
+                            <li>描述点1</li>
+                            <li>描述点2</li>
+                            <li>描述点3</li>
+                        </ul>
+                    </div>
+                    <div class="card-back">
+                        <img src="images/anticipation_g2_2.gif" alt="Anticipation-G2.2" width="100%" height="100%">
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" style="background-color: #E6F3FF;">
+                        <p style="text-align: left; font-size: 1.2em; color: #87CEFA;"><strong>G2.3 标题</strong></p>
+                        <ul style="text-align: left; list-style-type: disc; padding-left: 20px; font-size: 0.2em; font-family: Arial, sans-serif;">
+                            <li>描述点1</li>
+                            <li>描述点2</li>
+                            <li>描述点3</li>
+                        </ul>
+                    </div>
+                    <div class="card-back">
+                        <img src="images/anticipation_g2_3.gif" alt="Anticipation-G2.3" width="100%" height="100%">
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" style="background-color: #E6F3FF;">
+                        <p style="text-align: left; font-size: 1.2em; color: #87CEFA;"><strong>G2.4 标题</strong></p>
+                        <ul style="text-align: left; list-style-type: disc; padding-left: 20px; font-size: 0.2em; font-family: Arial, sans-serif;">
+                            <li>描述点1</li>
+                            <li>描述点2</li>
+                            <li>描述点3</li>
+                        </ul>
+                    </div>
+                    <div class="card-back">
+                        <img src="images/anticipation_g2_4.gif" alt="Anticipation-G2.4" width="100%" height="100%">
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" style="background-color: #E6F3FF;">
+                        <p style="text-align: left; font-size: 1.2em; color: #87CEFA;"><strong>G2.5 标题</strong></p>
+                        <ul style="text-align: left; list-style-type: disc; padding-left: 20px; font-size: 0.2em; font-family: Arial, sans-serif;">
+                            <li>描述点1</li>
+                            <li>描述点2</li>
+                            <li>描述点3</li>
+                        </ul>
+                    </div>
+                    <div class="card-back">
+                        <img src="images/anticipation_g2_5.gif" alt="Anticipation-G2.5" width="100%" height="100%">
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" style="background-color: #E6F3FF;">
+                        <p style="text-align: left; font-size: 1.2em; color: #87CEFA;"><strong>G2.6 标题</strong></p>
+                        <ul style="text-align: left; list-style-type: disc; padding-left: 20px; font-size: 0.2em; font-family: Arial, sans-serif;">
+                            <li>描述点1</li>
+                            <li>描述点2</li>
+                            <li>描述点3</li>
+                        </ul>
+                    </div>
+                    <div class="card-back">
+                        <img src="images/anticipation_g2_6.gif" alt="Anticipation-G2.6" width="100%" height="100%">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="fear">
+            <h2>恐惧</h2>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" style="background-color: #E6F3FF;">
+                        <p style="text-align: left; font-size: 1.2em; color: #87CEFA;"><strong>G3.1 标题</strong></p>
+                        <ul style="text-align: left; list-style-type: disc; padding-left: 20px; font-size: 0.2em; font-family: Arial, sans-serif;">
+                            <li>描述点1</li>
+                            <li>描述点2</li>
+                            <li>描述点3</li>
+                        </ul>
+                    </div>
+                    <div class="card-back">
+                        <img src="images/fear_g3_1.gif" alt="Fear-G3.1" width="100%" height="100%">
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" style="background-color: #E6F3FF;">
+                        <p style="text-align: left; font-size: 1.2em; color: #87CEFA;"><strong>G3.2 标题</strong></p>
+                        <ul style="text-align: left; list-style-type: disc; padding-left: 20px; font-size: 0.2em; font-family: Arial, sans-serif;">
+                            <li>描述点1</li>
+                            <li>描述点2</li>
+                            <li>描述点3</li>
+                        </ul>
+                    </div>
+                    <div class="card-back">
+                        <img src="images/fear_g3_2.gif" alt="Fear-G3.2" width="100%" height="100%">
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" style="background-color: #E6F3FF;">
+                        <p style="text-align: left; font-size: 1.2em; color: #87CEFA;"><strong>G3.3 标题</strong></p>
+                        <ul style="text-align: left; list-style-type: disc; padding-left: 20px; font-size: 0.2em; font-family: Arial, sans-serif;">
+                            <li>描述点1</li>
+                            <li>描述点2</li>
+                            <li>描述点3</li>
+                        </ul>
+                    </div>
+                    <div class="card-back">
+                        <img src="images/fear_g3_3.gif" alt="Fear-G3.3" width="100%" height="100%">
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" style="background-color: #E6F3FF;">
+                        <p style="text-align: left; font-size: 1.2em; color: #87CEFA;"><strong>G3.4 标题</strong></p>
+                        <ul style="text-align: left; list-style-type: disc; padding-left: 20px; font-size: 0.2em; font-family: Arial, sans-serif;">
+                            <li>描述点1</li>
+                            <li>描述点2</li>
+                            <li>描述点3</li>
+                        </ul>
+                    </div>
+                    <div class="card-back">
+                        <img src="images/fear_g3_4.gif" alt="Fear-G3.4" width="100%" height="100%">
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" style="background-color: #E6F3FF;">
+                        <p style="text-align: left; font-size: 1.2em; color: #87CEFA;"><strong>G3.5 标题</strong></p>
+                        <ul style="text-align: left; list-style-type: disc; padding-left: 20px; font-size: 0.2em; font-family: Arial, sans-serif;">
+                            <li>描述点1</li>
+                            <li>描述点2</li>
+                            <li>描述点3</li>
+                        </ul>
+                    </div>
+                    <div class="card-back">
+                        <img src="images/fear_g3_5.gif" alt="Fear-G3.5" width="100%" height="100%">
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" style="background-color: #E6F3FF;">
+                        <p style="text-align: left; font-size: 1.2em; color: #87CEFA;"><strong>G3.6 标题</strong></p>
+                        <ul style="text-align: left; list-style-type: disc; padding-left: 20px; font-size: 0.2em; font-family: Arial, sans-serif;">
+                            <li>描述点1</li>
+                            <li>描述点2</li>
+                            <li>描述点3</li>
+                        </ul>
+                    </div>
+                    <div class="card-back">
+                        <img src="images/fear_g3_6.gif" alt="Fear-G3.6" width="100%" height="100%">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="anger">
+            <h2>愤怒</h2>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" style="background-color: #E6F3FF;">
+                        <p style="text-align: left; font-size: 1.2em; color: #87CEFA;"><strong>G4.1 标题</strong></p>
+                        <ul style="text-align: left; list-style-type: disc; padding-left: 20px; font-size: 0.2em; font-family: Arial, sans-serif;">
+                            <li>描述点1</li>
+                            <li>描述点2</li>
+                            <li>描述点3</li>
+                        </ul>
+                    </div>
+                    <div class="card-back">
+                        <img src="images/anger_g4_1.gif" alt="Anger-G4.1" width="100%" height="100%">
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" style="background-color: #E6F3FF;">
+                        <p style="text-align: left; font-size: 1.2em; color: #87CEFA;"><strong>G4.2 标题</strong></p>
+                        <ul style="text-align: left; list-style-type: disc; padding-left: 20px; font-size: 0.2em; font-family: Arial, sans-serif;">
+                            <li>描述点1</li>
+                            <li>描述点2</li>
+                            <li>描述点3</li>
+                        </ul>
+                    </div>
+                    <div class="card-back">
+                        <img src="images/anger_g4_2.gif" alt="Anger-G4.2" width="100%" height="100%">
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" style="background-color: #E6F3FF;">
+                        <p style="text-align: left; font-size: 1.2em; color: #87CEFA;"><strong>G4.3 标题</strong></p>
+                        <ul style="text-align: left; list-style-type: disc; padding-left: 20px; font-size: 0.2em; font-family: Arial, sans-serif;">
+                            <li>描述点1</li>
+                            <li>描述点2</li>
+                            <li>描述点3</li>
+                        </ul>
+                    </div>
+                    <div class="card-back">
+                        <img src="images/anger_g4_3.gif" alt="Anger-G4.3" width="100%" height="100%">
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" style="background-color: #E6F3FF;">
+                        <p style="text-align: left; font-size: 1.2em; color: #87CEFA;"><strong>G4.4 标题</strong></p>
+                        <ul style="text-align: left; list-style-type: disc; padding-left: 20px; font-size: 0.2em; font-family: Arial, sans-serif;">
+                            <li>描述点1</li>
+                            <li>描述点2</li>
+                            <li>描述点3</li>
+                        </ul>
+                    </div>
+                    <div class="card-back">
+                        <img src="images/anger_g4_4.gif" alt="Anger-G4.4" width="100%" height="100%">
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" style="background-color: #E6F3FF;">
+                        <p style="text-align: left; font-size: 1.2em; color: #87CEFA;"><strong>G4.5 标题</strong></p>
+                        <ul style="text-align: left; list-style-type: disc; padding-left: 20px; font-size: 0.2em;">
+                            <li>描述点1</li>
+                            <li>描述点2</li>
+                            <li>描述点3</li>
+                        </ul>
+                    </div>
+                    <div class="card-back">
+                        <img src="images/anger_g4_5.gif" alt="Anger-G4.5" width="100%" height="100%">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="joy">
+            <h2>喜悦</h2>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" style="background-color: #E6F3FF;">
+                        <p style="text-align: left; font-size: 1.2em; color: #87CEFA;"><strong>G5.1 标题</strong></p>
+                        <ul style="text-align: left; list-style-type: disc; padding-left: 20px; font-size: 0.2em;">
+                            <li>描述点1</li>
+                            <li>描述点2</li>
+                            <li>描述点3</li>
+                        </ul>
+                    </div>
+                    <div class="card-back">
+                        <img src="images/joy_g5_1.gif" alt="Joy-G5.1" width="100%" height="100%">
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" style="background-color: #E6F3FF;">
+                        <p style="text-align: left; font-size: 1.2em; color: #87CEFA;"><strong>G5.2 标题</strong></p>
+                        <ul style="text-align: left; list-style-type: disc; padding-left: 20px; font-size: 0.2em;">
+                            <li>描述点1</li>
+                            <li>描述点2</li>
+                            <li>描述点3</li>
+                        </ul>
+                    </div>
+                    <div class="card-back">
+                        <img src="images/joy_g5_2.gif" alt="Joy-G5.2" width="100%" height="100%">
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" style="background-color: #E6F3FF;">
+                        <p style="text-align: left; font-size: 1.2em; color: #87CEFA;"><strong>G5.3 标题</strong></p>
+                        <ul style="text-align: left; list-style-type: disc; padding-left: 20px; font-size: 0.2em;">
+                            <li>描述点1</li>
+                            <li>描述点2</li>
+                            <li>描述点3</li>
+                        </ul>
+                    </div>
+                    <div class="card-back">
+                        <img src="images/joy_g5_3.gif" alt="Joy-G5.3" width="100%" height="100%">
+                    </div>
+                </div>
+            </div>
+        </section>
+        </section>
+
+        <section id="trust">
+            <h2>信任</h2>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" style="background-color: #E6F3FF;">
+                        <p style="text-align: left; font-size: 1.2em; color: #87CEFA;"><strong>G6.1 标题</strong></p>
+                        <ul style="text-align: left; list-style-type: disc; padding-left: 20px; font-size: 0.2em;">
+                            <li>描述点1</li>
+                            <li>描述点2</li>
+                            <li>描述点3</li>
+                        </ul>
+                    </div>
+                    <div class="card-back">
+                        <img src="images/trust_g6_1.gif" alt="Trust-G6.1" width="100%" height="100%">
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" style="background-color: #E6F3FF;">
+                        <p style="text-align: left; font-size: 1.2em; color: #87CEFA;"><strong>G6.2 标题</strong></p>
+                        <ul style="text-align: left; list-style-type: disc; padding-left: 20px; font-size: 0.2em;">
+                            <li>描述点1</li>
+                            <li>描述点2</li>
+                            <li>描述点3</li>
+                        </ul>
+                    </div>
+                    <div class="card-back">
+                        <img src="images/trust_g6_2.gif" alt="Trust-G6.2" width="100%" height="100%">
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" style="background-color: #E6F3FF;">
+                        <p style="text-align: left; font-size: 1.2em; color: #87CEFA;"><strong>G6.3 标题</strong></p>
+                        <ul style="text-align: left; list-style-type: disc; padding-left: 20px; font-size: 0.2em;">
+                            <li>描述点1</li>
+                            <li>描述点2</li>
+                            <li>描述点3</li>
+                        </ul>
+                    </div>
+                    <div class="card-back">
+                        <img src="images/trust_g6_3.gif" alt="Trust-G6.3" width="100%" height="100%">
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" style="background-color: #E6F3FF;">
+                        <p style="text-align: left; font-size: 1.2em; color: #87CEFA;"><strong>G6.4 标题</strong></p>
+                        <ul style="text-align: left; list-style-type: disc; padding-left: 20px; font-size: 0.2em;">
+                            <li>描述点1</li>
+                            <li>描述点2</li>
+                            <li>描述点3</li>
+                        </ul>
+                    </div>
+                    <div class="card-back">
+                        <img src="images/trust_g6_4.gif" alt="Trust-G6.4" width="100%" height="100%">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="surprise">
+            <h2>惊喜</h2>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" style="background-color: #E6F3FF;">
+                        <p style="text-align: left; font-size: 1.2em; color: #87CEFA;"><strong>G7.1 标题</strong></p>
+                        <ul style="text-align: left; list-style-type: disc; padding-left: 20px; font-size: 0.2em;">
+                            <li>描述点1</li>
+                            <li>描述点2</li>
+                            <li>描述点3</li>
+                        </ul>
+                    </div>
+                    <div class="card-back">
+                        <img src="images/surprise_g7_1.gif" alt="Surprise-G7.1" width="100%" height="100%">
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" style="background-color: #E6F3FF;">
+                        <p style="text-align: left; font-size: 1.2em; color: #87CEFA;"><strong>G7.2 标题</strong></p>
+                        <ul style="text-align: left; list-style-type: disc; padding-left: 20px; font-size: 0.2em;">
+                            <li>描述点1</li>
+                            <li>描述点2</li>
+                            <li>描述点3</li>
+                        </ul>
+                    </div>
+                    <div class="card-back">
+                        <img src="images/surprise_g7_2.gif" alt="Surprise-G7.2" width="100%" height="100%">
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" style="background-color: #E6F3FF;">
+                        <p style="text-align: left; font-size: 1.2em; color: #87CEFA;"><strong>G7.3 标题</strong></p>
+                        <ul style="text-align: left; list-style-type: disc; padding-left: 20px; font-size: 0.2em;">
+                            <li>描述点1</li>
+                            <li>描述点2</li>
+                            <li>描述点3</li>
+                        </ul>
+                    </div>
+                    <div class="card-back">
+                        <img src="images/surprise_g7_3.gif" alt="Surprise-G7.3" width="100%" height="100%">
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" style="background-color: #E6F3FF;">
+                        <p style="text-align: left; font-size: 1.2em; color: #87CEFA;"><strong>G7.4 标题</strong></p>
+                        <ul style="text-align: left; list-style-type: disc; padding-left: 20px; font-size: 0.2em;">
+                            <li>描述点1</li>
+                            <li>描述点2</li>
+                            <li>描述点3</li>
+                        </ul>
+                    </div>
+                    <div class="card-back">
+                        <img src="images/surprise_g7_4.gif" alt="Surprise-G7.4" width="100%" height="100%">
+                    </div>
+                </div>
+            </div>
+        </section>
+        </section>
+
+        <section id="disgust">
+            <h2>厌恶</h2>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" style="background-color: #E6F3FF;">
+                        <p style="text-align: left; font-size: 1.2em; color: #87CEFA;"><strong>G8.1 标题</strong></p>
+                        <ul style="text-align: left; list-style-type: disc; padding-left: 20px; font-size: 0.2em;">
+                            <li>描述点1</li>
+                            <li>描述点2</li>
+                            <li>描述点3</li>
+                        </ul>
+                    </div>
+                    <div class="card-back">
+                        <img src="images/disgust_g8_1.gif" alt="Disgust-G8.1" width="100%" height="100%">
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" style="background-color: #E6F3FF;">
+                        <p style="text-align: left; font-size: 1.2em; color: #87CEFA;"><strong>G8.2 标题</strong></p>
+                        <ul style="text-align: left; list-style-type: disc; padding-left: 20px; font-size: 0.2em;">
+                            <li>描述点1</li>
+                            <li>描述点2</li>
+                            <li>描述点3</li>
+                        </ul>
+                    </div>
+                    <div class="card-back">
+                        <img src="images/disgust_g8_2.gif" alt="Disgust-G8.2" width="100%" height="100%">
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" style="background-color: #E6F3FF;">
+                        <p style="text-align: left; font-size: 1.2em; color: #87CEFA;"><strong>G8.3 标题</strong></p>
+                        <ul style="text-align: left; list-style-type: disc; padding-left: 20px; font-size: 0.2em;">
+                            <li>描述点1</li>
+                            <li>描述点2</li>
+                            <li>描述点3</li>
+                        </ul>
+                    </div>
+                    <div class="card-back">
+                        <img src="images/disgust_g8_3.gif" alt="Disgust-G8.3" width="100%" height="100%">
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" style="background-color: #E6F3FF;">
+                        <p style="text-align: left; font-size: 1.2em; color: #87CEFA;"><strong>G8.4 标题</strong></p>
+                        <ul style="text-align: left; list-style-type: disc; padding-left: 20px; font-size: 0.2em;">
+                            <li>描述点1</li>
+                            <li>描述点2</li>
+                            <li>描述点3</li>
+                        </ul>
+                    </div>
+                    <div class="card-back">
+                        <img src="images/disgust_g8_4.gif" alt="Disgust-G8.4" width="100%" height="100%">
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" style="background-color: #E6F3FF;">
+                        <p style="text-align: left; font-size: 1.2em; color: #87CEFA;"><strong>G8.5 标题</strong></p>
+                        <ul style="text-align: left; list-style-type: disc; padding-left: 20px; font-size: 0.2em;">
+                            <li>描述点1</li>
+                            <li>描述点2</li>
+                            <li>描述点3</li>
+                        </ul>
+                    </div>
+                    <div class="card-back">
+                        <img src="images/disgust_g8_5.gif" alt="Disgust-G8.5" width="100%" height="100%">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
