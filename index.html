@@ -13,11 +13,11 @@
             background-repeat: no-repeat;
             margin: 0;
             padding: 0;
-            background-color: #ffffff;
+            background-color: #CCDBFD;
         }
         
         .top-nav {
-            background-color: #ffc8dd;
+            background-color: #ABC4FF;
             overflow: hidden;
             position: fixed;
             top: 0;
@@ -31,11 +31,11 @@
         }
         
         .top-nav.transparent {
-            background-color: rgba(255, 211, 241, 0.459);
+            background-color: #c1d3fe8c;
         }
         
         .top-nav .logo {
-            font-size: 20px;
+            font-size: 30px;
             font-weight: bold;
             background: linear-gradient(45deg, #ffffff, #ffffff);
             -webkit-background-clip: text;
@@ -56,7 +56,7 @@
         
         .top-nav a:hover {
             background-color: #f9b1cc;
-            color: black;
+            color: rgb(255, 255, 255);
         }
         
         .side-nav {
@@ -66,7 +66,7 @@
             z-index: 1;
             top: 60px;
             left: 0;
-            background-color: #a2d2ff;
+            background-color: #C1D3FE;
             overflow-x: hidden;
             padding-top: 20px;
         }
@@ -91,7 +91,7 @@
         .card {
             background-color: transparent;
             width: 300px;
-            height: 200px;
+            height: 400px;
             perspective: 1000px;
             margin: 15px;
             display: inline-block;
@@ -124,7 +124,7 @@
         }
         
         .card-back {
-            background-color: #9370db;
+            background-color: #CCDBFD;
             color: white;
             transform: rotateY(180deg);
         }
@@ -162,13 +162,13 @@
     </script>
 
     <div class="side-nav">
-        <a href="#sadness" class="emotion-link" data-color="#0000FF">Sadness</a>
-        <a href="#anticipation" class="emotion-link" data-color="#00FF00">Anticipation</a>
+        <a href="#sadness" class="emotion-link" data-color="#080357">Sadness</a>
+        <a href="#anticipation" class="emotion-link" data-color="#D6FFB7">Anticipation</a>
         <a href="#fear" class="emotion-link" data-color="#800080">Fear</a>
-        <a href="#anger" class="emotion-link" data-color="#FF0000">Anger</a>
-        <a href="#joy" class="emotion-link" data-color="#FFFF00">Joy</a>
-        <a href="#trust" class="emotion-link" data-color="#87CEEB">Trust</a>
-        <a href="#surprise" class="emotion-link" data-color="#FFA500">Surprise</a>
+        <a href="#anger" class="emotion-link" data-color="#c1121f">Anger</a>
+        <a href="#joy" class="emotion-link" data-color="#FDDA5B">Joy</a>
+        <a href="#trust" class="emotion-link" data-color="#87CEFA">Trust</a>
+        <a href="#surprise" class="emotion-link" data-color="#ff771c">Surprise</a>
         <a href="#disgust" class="emotion-link" data-color="#8B4513">Disgust</a>
     </div>
 
@@ -192,17 +192,12 @@
 
     <div class="main">
         <section id="sadness">
-            <h2 style="color: rgb(138, 171, 255);">Sadness</h2>
+            <h2 style="color: #080357;">Sadness</h2>
             <!-- 7个卡片 -->
             <div class="card">
                 <div class="card-inner">
-                    <div class="card-front" style="background-color: rgb(138, 171, 255);">
-                        <p style="text-align: left; font-size: 1em; color: #ffffff; margin-bottom: 5px;"><strong>&ensp;&ensp;G1.1 Distancing by Pulling Away</strong></p>
-                        <ul style="text-align: left; list-style-type: disc; padding-left: 15px; font-size: 0.000000008em; font-family: serif; margin-top: 2px; color: #ffffff;">
-                            <li><strong>Zoom in to focus on specific sad data points, such as rising unemployment rates or key charts showing economic downturns.</strong></li>
-                            <li><strong>Zooming out provides a broader view, displaying the full scope of the situation and emphasizing feelings of loneliness or helplessness.</strong></li>
-                            <li><strong>Accompany zoom-ins with low and slow musical tempos; as the camera zooms out, the music gradually fades, suggesting that the emotions are dissipating into the vast space.</strong></li>
-                        </ul>
+                    <div class="card-front" style="background-color: #080357;">
+                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong>G1.1 Distancing by Pulling Away</strong></p>
                     </div>
                     <div class="card-back">
                         <video controls style="width: 100%; height: auto;">
@@ -211,18 +206,19 @@
                             您的浏览器不支持 HTML5 视频。
                             <a href="video/Sad-G1.1.mp4">下载视频</a>
                         </video>
+                        <ul style="text-align: left; list-style-type: none; padding-left: 15px; font-size: 0.000000008em; font-family: system-ui; serif; margin-top: 2px; color: #080357;">
+                            <li><strong>✏️Zoom in to focus on specific sad data points, such as rising unemployment rates or key charts showing economic downturns.</strong></li>
+                            <li><strong>✏️Zooming out provides a broader view, displaying the full scope of the situation and emphasizing feelings of loneliness or helplessness.</strong></li>
+                            <li><strong>🔊Accompany zoom-ins with low and slow musical tempos; as the camera zooms out, the music gradually fades, suggesting that the emotions are dissipating into the vast space.</strong></li>
+                        </ul>
                     </div>
                 </div>
             </div>
+           
             <div class="card">
                 <div class="card-inner">
-                    <div class="card-front" style="background-color: rgb(138, 171, 255);">
-                        <p style="text-align: left; font-size: 1em; color: #ffffff; margin-bottom: 5px;"><strong>&ensp;&ensp;G1.2 Fading and Dissolving</strong></p>
-                        <ul style="text-align: left; list-style-type: disc; padding-left: 15px; font-size: 0.000000008em; font-family: serif; margin-top: 2px; color: #ffffff;">
-                            <li><strong>使用渐变效果来表现悲伤情绪的逐渐消散或加深。</strong></li>
-                            <li><strong>通过溶解转场，将悲伤的场景或数据与更积极的画面融合，展示情绪的转变过程。</strong></li>
-                            <li><strong>配合柔和的背景音乐，增强渐变和溶解效果的情感表达。</strong></li>
-                        </ul>
+                    <div class="card-front" style="background-color: #080357;">
+                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong>G1.2 Sadness Echo</strong></p>
                     </div>
                     <div class="card-back">
                         <video controls style="width: 100%; height: auto;">
@@ -231,18 +227,23 @@
                             您的浏览器不支持 HTML5 视频。
                             <a href="video/G1-2-悲伤缓影.mp4">下载视频</a>
                         </video>
+                        <ul style="text-align: left; list-style-type: none; padding-left: 15px; font-size: 0.000000008em; font-family: system-ui; serif; margin-top: 2px; color: #080357;">
+                            <li><strong>✏️As the data, exemplified by charts indicating economic recession, demonstrate a decline,
+                                employ camera movement to trace the trajectory of the data, effectively creating a visual sensation of descending. This
+                                technique metaphorically represents the fall, enhancing the viewer's perception of decline.</strong></li>
+                            <li><strong>🔊Complement the visual
+                                depiction of descending data with a progressively softening string music background. This approach uses the diminishing
+                                volume and tempo of the music to symbolically represent the fading of hope, thereby deepening the affective on the
+                                audience.</strong></li>
+                        </ul>
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="card-inner">
-                    <div class="card-front" style="background-color: rgb(138, 171, 255);">
-                        <p style="text-align: left; font-size: 1em; color: #ffffff; margin-bottom: 5px;"><strong>&ensp;&ensp;G1.3 Slow Motion and Time Lapse</strong></p>
-                        <ul style="text-align: left; list-style-type: disc; padding-left: 15px; font-size: 0.000000008em; font-family: serif; margin-top: 2px; color: #ffffff;">
-                            <li><strong>使用慢动作效果突出悲伤时刻的细节，增强情感共鸣。</strong></li>
-                            <li><strong>通过延时摄影展示悲伤情绪随时间推移的变化，如从悲伤到希望的过渡。</strong></li>
-                            <li><strong>结合音乐节奏，使慢动作和延时效果与音频同步，增强视觉冲击力。</strong></li>
-                        </ul>
+                    <div class="card-front" style="background-color: #080357;">
+                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong>G1.3.1 Cool Colors for
+                            Emotion</strong></p>
                     </div>
                     <div class="card-back">
                         <video controls style="width: 100%; height: auto;">
@@ -251,18 +252,20 @@
                             您的浏览器不支持 HTML5 视频。
                             <a href="video/G1-3-1冷色调表达情感.mp4">下载视频</a>
                         </video>
+                        <ul style="text-align: left; list-style-type: none; padding-left: 15px; font-size: 0.000000008em; font-family: system-ui; serif; margin-top: 2px; color: #080357;">
+                            <li><strong>✏️Utilize cool color tones, such as deep blue and gray, to effectively underscore downward trends
+                                or negative outcomes in data visualizations. These color changes are intended to mirror emotional transitions within
+                                the narrative.</strong></li>
+                            <li><strong>🔊Coordinate the transition of visual colors from warm to cool with a corresponding shift in audio
+                                tones to enhance the narrative's emotional landscape. </strong></li>
+                        </ul>
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="card-inner">
-                    <div class="card-front" style="background-color: rgb(138, 171, 255);">
-                        <p style="text-align: left; font-size: 1em; color: #ffffff; margin-bottom: 5px;"><strong>&ensp;&ensp;G1.4 Blurring and Focusing</strong></p>
-                        <ul style="text-align: left; list-style-type: disc; padding-left: 15px; font-size: 0.000000008em; font-family: serif; margin-top: 2px; color: #ffffff;">
-                            <li><strong>使用模糊效果表现悲伤时的思绪混乱或情感模糊。</strong></li>
-                            <li><strong>通过聚焦效果突出关键数据或图表，引导观众注意力。</strong></li>
-                            <li><strong>结合音效，如心跳声，与模糊和聚焦效果同步，增强情感表达。</strong></li>
-                        </ul>
+                    <div class="card-front" style="background-color: #080357;">
+                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong> G1.3.2 Contrasting Colors and High Saturation</strong></p>
                     </div>
                     <div class="card-back">
                         <video controls style="width: 100%; height: auto;">
@@ -271,18 +274,20 @@
                             您的浏览器不支持 HTML5 视频。
                             <a href="video/G1.3.2 对比色和高饱和度.mp4">下载视频</a>
                         </video>
+                        <ul style="text-align: left; list-style-type: none; padding-left: 15px; font-size: 0.000000008em; font-family: system-ui; serif; margin-top: 2px; color: #080357;">
+                            <li><strong>✏️In
+                                the visualization of data, employ black text against complementary colors—such as red against green or blue against
+                                orange—to accentuate key data points. This should be set against a background of low saturation to draw viewer focus and amplify the affective of these points.</strong></li>
+                            <li><strong>🔊Emphasize the sadness through changes in sound rhythm and volume combined
+                                with colors.</strong></li>
+                        </ul>
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="card-inner">
-                    <div class="card-front" style="background-color: rgb(138, 171, 255);">
-                        <p style="text-align: left; font-size: 1em; color: #ffffff; margin-bottom: 5px;"><strong>&ensp;&ensp;G1.5 Color Grading</strong></p>
-                        <ul style="text-align: left; list-style-type: disc; padding-left: 15px; font-size: 0.000000008em; font-family: serif; margin-top: 2px; color: #ffffff;">
-                            <li><strong>使用冷色调（如蓝色、灰色）增强悲伤氛围。</strong></li>
-                            <li><strong>通过色彩渐变展示情绪变化，如从冷色调过渡到暖色调。</strong></li>
-                            <li><strong>结合音乐情绪，使色彩变化与音频同步，增强视觉感染力。</strong></li>
-                        </ul>
+                    <div class="card-front" style="background-color: #080357;">
+                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong> G1.3.3 Consistency in Color Depth and Emotional Semantics</strong></p>
                     </div>
                     <div class="card-back">
                         <video controls style="width: 100%; height: auto;">
@@ -291,18 +296,19 @@
                             您的浏览器不支持 HTML5 视频。
                             <a href="video/G1.3.3 色彩深度和情感语义的一致性.mp4">下载视频</a>
                         </video>
+                        <ul style="text-align: left; list-style-type: none; padding-left: 15px; font-size: 0.000000008em; font-family: system-ui; serif; margin-top: 2px; color: #080357;">
+                            <li><strong>✏️Convey sadness through variations in color depth and ensure that the proportion of semantically appropriate colors in the frame is suitable to directly resonate
+                                with the audience.</strong></li>                            <li><strong>🔊Additionally, incorporate sound design that matches the semantics, such as adding the sound of
+                                coins dropping when yellow coins appear on the screen, to highlight the issue of wealth disparity and evoke sadness in the
+                                audience.</strong></li>
+                        </ul>
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="card-inner">
-                    <div class="card-front" style="background-color: rgb(138, 171, 255);">
-                        <p style="text-align: left; font-size: 1em; color: #ffffff; margin-bottom: 5px;"><strong>&ensp;&ensp;G1.6 Particle Effects</strong></p>
-                        <ul style="text-align: left; list-style-type: disc; padding-left: 15px; font-size: 0.000000008em; font-family: serif; margin-top: 2px; color: #ffffff;">
-                            <li><strong>使用粒子效果模拟泪水或雨滴，增强悲伤氛围。</strong></li>
-                            <li><strong>通过粒子的聚散展示情绪变化，如从分散到聚集表现希望。</strong></li>
-                            <li><strong>配合柔和的背景音乐，使粒子动画与音频节奏同步。</strong></li>
-                        </ul>
+                    <div class="card-front" style="background-color: #080357;">
+                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong>G1.4 Memory Loop </strong></p>
                     </div>
                     <div class="card-back">
                         <video controls style="width: 100%; height: auto;">
@@ -311,18 +317,18 @@
                             您的浏览器不支持 HTML5 视频。
                             <a href="video/G1.4 回忆循环.mp4">下载视频</a>
                         </video>
+                        <ul style="text-align: left; list-style-type: none; padding-left: 15px; font-size: 0.000000008em; font-family: system-ui; serif; margin-top: 2px; color: #080357;">
+                            <li><strong>✏️Combine real news clips, historical archive images, and animated data charts to tell a
+                                sad story, such as the impacts of war, natural disasters, or economic crises.</strong></li>                            <li><strong>🔊Enhance the emotional depth of multimedia
+                                elements with on-site recordings, sad background music, and related sound effects, such as crying or heartbeat sounds.</strong></li>
+                        </ul>
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="card-inner">
-                    <div class="card-front" style="background-color: rgb(138, 171, 255);">
-                        <p style="text-align: left; font-size: 1em; color: #ffffff; margin-bottom: 5px;"><strong>&ensp;&ensp;G1.7 Parallax Scrolling</strong></p>
-                        <ul style="text-align: left; list-style-type: disc; padding-left: 15px; font-size: 0.000000008em; font-family: serif; margin-top: 2px; color: #ffffff;">
-                            <li><strong>使用视差滚动效果创造深度感，突出悲伤情绪的层次。</strong></li>
-                            <li><strong>通过不同层次的移动速度，展示情绪的复杂性和变化。</strong></li>
-                            <li><strong>配合舒缓的背景音乐，增强视差效果的情感表达。</strong></li>
-                        </ul>
+                    <div class="card-front" style="background-color: #080357;">
+                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong>G1.5 Data Point Loop</strong></p>
                     </div>
                     <div class="card-back">
                         <video controls style="width: 100%; height: auto;">
@@ -331,321 +337,458 @@
                             您的浏览器不支持 HTML5 视频。
                             <a href="video/G1.5- 数据point循环.mp4">下载视频</a>
                         </video>
+                        <ul style="text-align: left; list-style-type: none; padding-left: 15px; font-size: 0.000000008em; font-family: system-ui; serif; margin-top: 2px; color: #080357;">
+                            <li><strong>✏️ Continuously increase an element in the frame (such as icons representing unem-
+                                ployment numbers) to visualize the worsening of the problem.</strong></li>
+                            <li><strong>🔊 As the elements increase, the sound effects gradually
+                                intensify, such as increasingly loud bell or alarm sounds, suggesting the urgency and severity of the issue.</strong></li>
+                        </ul>
                     </div>
                 </div>
+            </div>
         </section>
 
         <section id="anticipation">
-            <h2>期待</h2>
+            <h2 style="color: #D6FFB7;">Anticipation</h2>
             <div class="card">
                 <div class="card-inner">
-                    <div class="card-front" style="background-color: #E6F3FF;">
-                        <p style="text-align: left; font-size: 1.2em; color: #87CEFA;"><strong>G2.1 标题</strong></p>
-                        <ul style="text-align: left; list-style-type: disc; padding-left: 20px; font-size: 0.2em; font-family: Arial, sans-serif;">
-                            <li>描述点1</li>
-                            <li>描述点2</li>
-                            <li>描述点3</li>
-                        </ul>
+                    <div class="card-front" style="background-color: #D6FFB7;">
+                        <p style="text-align: center; font-size: 1em; color: #000000; margin-bottom: 5px; margin-top: 180px;"><strong>G2.1 Anticipatory Action </strong></p>
                     </div>
                     <div class="card-back">
-                        <img src="images/anticipation_g2_1.gif" alt="Anticipation-G2.1" width="100%" height="100%">
+                        <video controls style="width: 100%; height: auto;">
+                            <source src="video/G2.1 前瞻动作.mp4" type="video/mp4">
+                            <source src="video/G2.1 前瞻动作.mp4" type="video/webm">
+                            您的浏览器不支持 HTML5 视频。
+                            <a href="video/G2.1 前瞻动作.mp4">下载视频</a>
+                        </video>
+                        <ul style="text-align: left; list-style-type: none; padding-left: 15px; font-size: 0.000000008em; font-family: system-ui; serif; margin-top: 2px; color: #6bc76f;">
+                            <li><strong>✏️Use zoom-in to focus on soon-to-be-revealed important data points, such as
+                                breakthroughs in technology or upcoming events. Zoom out to provide a broad background of anticipation, such as the
+                                opening of a major event. </strong></li>
+                            <li><strong>🔊Use progressive music or sound effects when zooming in to increase the sense of anticipation;
+                                as you zoom out, the music reaches a climax, expanding the scope of expectation.</strong></li>
+                        </ul>
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="card-inner">
-                    <div class="card-front" style="background-color: #E6F3FF;">
-                        <p style="text-align: left; font-size: 1.2em; color: #87CEFA;"><strong>G2.2 标题</strong></p>
-                        <ul style="text-align: left; list-style-type: disc; padding-left: 20px; font-size: 0.2em; font-family: Arial, sans-serif;">
-                            <li>描述点1</li>
-                            <li>描述点2</li>
-                            <li>描述点3</li>
-                        </ul>
+                    <div class="card-front" style="background-color: #D6FFB7;">
+                        <p style="text-align: center; font-size: 1em; color: #000000; margin-bottom: 5px; margin-top: 180px;"><strong>G2.2 Dynamic Prediction</strong></p>
                     </div>
                     <div class="card-back">
-                        <img src="images/anticipation_g2_2.gif" alt="Anticipation-G2.2" width="100%" height="100%">
+                        <video controls style="width: 100%; height: auto;">
+                            <source src="video/G2.2 动态预测.mp4" type="video/mp4">
+                            <source src="video/G2.2 动态预测.webm" type="video/webm">
+                            您的浏览器不支持 HTML5 视频。
+                            <a href="video/G2.2 动态预测.mp4">下载视频</a>
+                        </video>
+                        <ul style="text-align: left; list-style-type: none; padding-left: 15px; font-size: 0.000000008em; font-family: system-ui; serif; margin-top: 2px; color: #6bc76f;">
+                            <li><strong>✏️The camera follows the dynamics of rising data, such as a stock market forecast
+                                index, visually simulating a rising sensation.</strong></li>
+                            <li><strong>🔊Accompany the visual dynamics with gradually intensifying instrument
+                                sounds, such as trumpets or strings, signaling the impending changes.</strong></li>
+                        </ul>
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="card-inner">
-                    <div class="card-front" style="background-color: #E6F3FF;">
-                        <p style="text-align: left; font-size: 1.2em; color: #87CEFA;"><strong>G2.3 标题</strong></p>
-                        <ul style="text-align: left; list-style-type: disc; padding-left: 20px; font-size: 0.2em; font-family: Arial, sans-serif;">
-                            <li>描述点1</li>
-                            <li>描述点2</li>
-                            <li>描述点3</li>
-                        </ul>
+                    <div class="card-front" style="background-color: #D6FFB7;">
+                        <p style="text-align: center; font-size: 1em; color: #000000; margin-bottom: 5px; margin-top: 180px;"><strong> G2.3.1 Use bright and
+                            high-contrast colors</strong></p>
                     </div>
                     <div class="card-back">
-                        <img src="images/anticipation_g2_3.gif" alt="Anticipation-G2.3" width="100%" height="100%">
+                        <video controls style="width: 100%; height: auto;">
+                            <source src="video/G2.3.1使用明亮和高对比度的色彩.mp4" type="video/mp4">
+                            <source src="video/G2.3.1使用明亮和高对比度的色彩.mp4" type="video/webm">
+                            您的浏览器不支持 HTML5 视频。
+                            <a href="video/G2.3.1使用明亮和高对比度的色彩.mp4">下载视频</a>
+                        </video>
+                        <ul style="text-align: left; list-style-type: none; padding-left: 15px; font-size: 0.000000008em; font-family: system-ui; serif; margin-top: 2px; color: #6bc76f;">
+                            <li><strong>✏️Employ white text on dark or colored backgrounds to symbolize light and hope, while
+                                using high-contrast color combinations (such as black on white or red on white) to enhance visual impact and convey
+                                anticipation. </strong></li>
+                            <li><strong>🔊Building on this, the sound design usually transitions to a new, more lively BGM to indicate a shift towards
+                                a more positive emotion.</strong></li>
+                        </ul>
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="card-inner">
-                    <div class="card-front" style="background-color: #E6F3FF;">
-                        <p style="text-align: left; font-size: 1.2em; color: #87CEFA;"><strong>G2.4 标题</strong></p>
-                        <ul style="text-align: left; list-style-type: disc; padding-left: 20px; font-size: 0.2em; font-family: Arial, sans-serif;">
-                            <li>描述点1</li>
-                            <li>描述点2</li>
-                            <li>描述点3</li>
-                        </ul>
+                    <div class="card-front" style="background-color: #D6FFB7;">
+                        <p style="text-align: center; font-size: 1em; color: #000000; margin-bottom: 5px; margin-top: 180px;"><strong>G2.3.2 Dynamic color changes and symbolic meanings</strong></p>
                     </div>
                     <div class="card-back">
-                        <img src="images/anticipation_g2_4.gif" alt="Anticipation-G2.4" width="100%" height="100%">
+                        <video controls style="width: 100%; height: auto;">
+                            <source src="video/G2.3.2]色彩的动态变化和象征意义.mp4" type="video/mp4">
+                            <source src="video/G2.3.2]色彩的动态变化和象征意义.webm" type="video/webm">
+                            您的浏览器不支持 HTML5 视频。
+                            <a href="video/G2.3.2]色彩的动态变化和象征意义.mp4">下载视频</a>
+                        </video>
+                        <ul style="text-align: left; list-style-type: none; padding-left: 15px; font-size: 0.000000008em; font-family: system-ui; serif; margin-top: 2px; color: #6bc76f;">
+                            <li><strong>✏️Transition from monochrome
+                                to multicolored to symbolize the process from monotony to diversity, sparking viewer curiosity and anticipation. Use
+                                symbolically significant, high-saturation colors (like blue for dreams, green for growth, yellow for vitality) to strengthen
+                                the mood of anticipation and incorporate dynamic color changes (such as gradients or flickers) to increase visual appeal.</strong></li>
+                            <li><strong>🔊The sound rhythm quickens to match the change in colors from singular to diverse, thereby showcasing a sense of
+                                anticipation.</strong></li>
+                        </ul>
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="card-inner">
-                    <div class="card-front" style="background-color: #E6F3FF;">
-                        <p style="text-align: left; font-size: 1.2em; color: #87CEFA;"><strong>G2.5 标题</strong></p>
-                        <ul style="text-align: left; list-style-type: disc; padding-left: 20px; font-size: 0.2em; font-family: Arial, sans-serif;">
-                            <li>描述点1</li>
-                            <li>描述点2</li>
-                            <li>描述点3</li>
-                        </ul>
+                    <div class="card-front" style="background-color: #D6FFB7;">
+                        <p style="text-align: center; font-size: 1em; color: #000000; margin-bottom: 5px; margin-top: 180px;"><strong>G2.4 Future Symbols</strong></p>
                     </div>
                     <div class="card-back">
-                        <img src="images/anticipation_g2_5.gif" alt="Anticipation-G2.5" width="100%" height="100%">
+                        <video controls style="width: 100%; height: auto;">
+                            <source src="video/G2.4 未来符号.mp4" type="video/mp4">
+                            <source src="video/G2.4 未来符号.webm" type="video/webm">
+                            您的浏览器不支持 HTML5 视频。
+                            <a href="video/G2.4 未来符号.mp4">下载视频</a>
+                        </video>
+                        <ul style="text-align: left; list-style-type: none; padding-left: 15px; font-size: 0.000000008em; font-family: system-ui; serif; margin-top: 2px; color: #6bc76f;">
+                            <li><strong>✏️Add text or symbols that presage the future, for example, use animated clipart to
+                                display clear visual symbols that convey anticipation. </strong></li>
+                            <li><strong>🔊Use melodies full
+                                of anticipation, such as hopeful tunes or architectural music pieces.</strong></li>
+                        </ul>
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="card-inner">
-                    <div class="card-front" style="background-color: #E6F3FF;">
-                        <p style="text-align: left; font-size: 1.2em; color: #87CEFA;"><strong>G2.6 标题</strong></p>
-                        <ul style="text-align: left; list-style-type: disc; padding-left: 20px; font-size: 0.2em; font-family: Arial, sans-serif;">
-                            <li>描述点1</li>
-                            <li>描述点2</li>
-                            <li>描述点3</li>
-                        </ul>
+                    <div class="card-front" style="background-color: #D6FFB7;">
+                        <p style="text-align: center; font-size: 1em; color: #000000; margin-bottom: 5px; margin-top: 180px;"><strong>G2.5 Narrative Revelation</strong></p>
                     </div>
                     <div class="card-back">
-                        <img src="images/anticipation_g2_6.gif" alt="Anticipation-G2.6" width="100%" height="100%">
+                        <video controls style="width: 100%; height: auto;">
+                            <source src="video/G2.5 叙事揭示.mp4" type="video/mp4">
+                            <source src="video/G2.5 叙事揭示.webm" type="video/webm">
+                            您的浏览器不支持 HTML5 视频。
+                            <a href="video/G2.5 叙事揭示.mp4">下载视频</a>
+                        </video>
+                        <ul style="text-align: left; list-style-type: none; padding-left: 15px; font-size: 0.000000008em; font-family: system-ui; serif; margin-top: 2px; color: #6bc76f;">
+                            <li><strong>✏️Combine similar shapes (data curves with real objects); historical material real
+                                images; historical videos combined with contemporary sounds. </strong></li>
+                            <li><strong>🔊Blend futuristic sound effects, such as synthesizer tones, to enhance the sense of
+                                foresight and innovation, or opt to use original sounds from historical materials or interviews.</strong></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
-
+        
         <section id="fear">
-            <h2>恐惧</h2>
+            <h2 style="color: #392f5a;">Fear</h2>
             <div class="card">
                 <div class="card-inner">
-                    <div class="card-front" style="background-color: #E6F3FF;">
-                        <p style="text-align: left; font-size: 1.2em; color: #87CEFA;"><strong>G3.1 标题</strong></p>
-                        <ul style="text-align: left; list-style-type: disc; padding-left: 20px; font-size: 0.2em; font-family: Arial, sans-serif;">
-                            <li>描述点1</li>
-                            <li>描述点2</li>
-                            <li>描述点3</li>
-                        </ul>
+                    <div class="card-front" style="background-color: #392f5a;">
+                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong>G3.1 Imminent Threat</strong></p>
                     </div>
                     <div class="card-back">
-                        <img src="images/fear_g3_1.gif" alt="Fear-G3.1" width="100%" height="100%">
+                        <video controls style="width: 100%; height: auto;">
+                            <source src="video/G3.1 威胁临近.mp4" type="video/mp4">
+                            <source src="video/G3.1 威胁临近.webm" type="video/webm">
+                            您的浏览器不支持 HTML5 视频。
+                            <a href="video/G3.1 威胁临近.mp4">下载视频</a>
+                        </video>
+                        <ul style="text-align: left; list-style-type: none; padding-left: 15px; font-size: 0.000000008em; font-family: system-ui; serif; margin-top: 2px; color: #800080;">
+                            <li><strong>✏️Use zoom-in to focus on unsettling data points, such as charts of disease outbreaks
+                                or sharp declines in financial markets. Zoom out to display the broader crisis scenario.</strong></li>
+                            <li><strong>🔊Utilize tense strings and abrupt
+                                sound effects like sharp piano notes or percussion to increase the tension, or add sounds of breaking glass, car crashes,
+                                sirens, and explosions to enhance the sense of instability.</strong></li>
+                        </ul>
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="card-inner">
-                    <div class="card-front" style="background-color: #E6F3FF;">
-                        <p style="text-align: left; font-size: 1.2em; color: #87CEFA;"><strong>G3.2 标题</strong></p>
-                        <ul style="text-align: left; list-style-type: disc; padding-left: 20px; font-size: 0.2em; font-family: Arial, sans-serif;">
-                            <li>描述点1</li>
-                            <li>描述点2</li>
-                            <li>描述点3</li>
-                        </ul>
+                    <div class="card-front" style="background-color: #392f5a;">
+                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong>G3.2 Shaking Tension</strong></p>
                     </div>
                     <div class="card-back">
-                        <img src="images/fear_g3_2.gif" alt="Fear-G3.2" width="100%" height="100%">
+                        <video controls style="width: 100%; height: auto;">
+                            <source src="video/G3.2 摄动紧张.mp4" type="video/mp4">
+                            <source src="video/G3.2 摄动紧张.webm" type="video/webm">
+                            您的浏览器不支持 HTML5 视频。
+                            <a href="video/G3.2 摄动紧张.mp4">下载视频</a>
+                        </video>
+                        <ul style="text-align: left; list-style-type: none; padding-left: 15px; font-size: 0.000000008em; font-family: system-ui; serif; margin-top: 2px; color: #800080;">
+                            <li><strong>✏️The camera follows the movement of the data, showing rapid declines or tremors to
+                                simulate a feeling of panic.</strong></li>
+                            <li><strong>🔊Fast-paced rhythms with intermittent sound effects such as breathing or heartbeat sounds,
+                                or additional unsettling effects like breaking glass, car crashes, sirens, and explosions to mimic anxious emotions.</strong></li>
+                        </ul>
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="card-inner">
-                    <div class="card-front" style="background-color: #E6F3FF;">
-                        <p style="text-align: left; font-size: 1.2em; color: #87CEFA;"><strong>G3.3 标题</strong></p>
-                        <ul style="text-align: left; list-style-type: disc; padding-left: 20px; font-size: 0.2em; font-family: Arial, sans-serif;">
-                            <li>描述点1</li>
-                            <li>描述点2</li>
-                            <li>描述点3</li>
-                        </ul>
+                    <div class="card-front" style="background-color: #392f5a;">
+                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong>G3.3.1 Cold Color Fear
+                            Visual Effects</strong></p>
                     </div>
                     <div class="card-back">
-                        <img src="images/fear_g3_3.gif" alt="Fear-G3.3" width="100%" height="100%">
+                        <video controls style="width: 100%; height: auto;">
+                            <source src="video/G3.3.1寒色恐惧.mp4" type="video/mp4">
+                            <source src="video/G3.3.1寒色恐惧.webm" type="video/webm">
+                            您的浏览器不支持 HTML5 视频。
+                            <a href="video/G3.3.1寒色恐惧.mp4">下载视频</a>
+                        </video>
+                        <ul style="text-align: left; list-style-type: none; padding-left: 15px; font-size: 0.000000008em; font-family: system-ui; serif; margin-top: 2px; color: #800080;">
+                            <li><strong>✏️Use warning colors such as red and black or highly bright color changes to emphasize danger or
+                                negative trends.</strong></li>
+                            <li><strong>🔊Accompany color changes with deep, heavy background sounds, like bass violins, to enhance the
+                                feeling of insecurity. </strong></li>
+                        </ul>
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="card-inner">
-                    <div class="card-front" style="background-color: #E6F3FF;">
-                        <p style="text-align: left; font-size: 1.2em; color: #87CEFA;"><strong>G3.4 标题</strong></p>
-                        <ul style="text-align: left; list-style-type: disc; padding-left: 20px; font-size: 0.2em; font-family: Arial, sans-serif;">
-                            <li>描述点1</li>
-                            <li>描述点2</li>
-                            <li>描述点3</li>
-                        </ul>
+                    <div class="card-front" style="background-color: #392f5a;">
+                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong>G3.3.2 Dynamic Elements and Visual Impact</strong></p>
                     </div>
                     <div class="card-back">
-                        <img src="images/fear_g3_4.gif" alt="Fear-G3.4" width="100%" height="100%">
+                        <video controls style="width: 100%; height: auto;">
+                            <source src="video/G2.3.2]色彩的动态变化和象征意义.mp4" type="video/mp4">
+                            <source src="video/G2.3.2]色彩的动态变化和象征意义.webm" type="video/webm">
+                            您的浏览器不支持 HTML5 视频。
+                            <a href="video/G2.3.2]色彩的动态变化和象征意义.mp4">下载视频</a>
+                        </video>
+                        <ul style="text-align: left; list-style-type: none; padding-left: 15px; font-size: 0.000000008em; font-family: system-ui; serif; margin-top: 2px; color: #800080;">
+                            <li><strong>✏️Display the growth and urgency of threats
+                                through dynamic elements (such as a rising blue sea level) and strong visual impacts (such as a red curve extending to an
+                                explosion icon). Use high-saturation colors, especially red, to attract attention and provoke strong emotional responses.</strong></li>
+                            <li><strong>🔊The sound employs a fast-paced, oppressive background music.</strong></li>
+                        </ul>
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="card-inner">
-                    <div class="card-front" style="background-color: #E6F3FF;">
-                        <p style="text-align: left; font-size: 1.2em; color: #87CEFA;"><strong>G3.5 标题</strong></p>
-                        <ul style="text-align: left; list-style-type: disc; padding-left: 20px; font-size: 0.2em; font-family: Arial, sans-serif;">
-                            <li>描述点1</li>
-                            <li>描述点2</li>
-                            <li>描述点3</li>
-                        </ul>
+                    <div class="card-front" style="background-color: #392f5a;">
+                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong>G3.4 Shadow Flickering</strong></p>
                     </div>
                     <div class="card-back">
-                        <img src="images/fear_g3_5.gif" alt="Fear-G3.5" width="100%" height="100%">
+                        <video controls style="width: 100%; height: auto;">
+                            <source src="video/G3.4 阴影闪烁.mp4" type="video/mp4">
+                            <source src="video/G3.4 阴影闪烁.webm" type="video/webm">
+                            您的浏览器不支持 HTML5 视频。
+                            <a href="video/G3.4 阴影闪烁.mp4">下载视频</a>
+                        </video>
+                        <ul style="text-align: left; list-style-type: none; padding-left: 15px; font-size: 0.000000008em; font-family: system-ui; serif; margin-top: 2px; color: #800080;">
+                            <li><strong>✏️Use rapid editing techniques combined with real news reports, expert interviews,
+                                emergency broadcasts, and dynamic data charts to present emergency situations or crises, creating a sense of unease.</strong></li>
+                            <li><strong>🔊Intertwine live sound effects from news reports, emergency broadcast alarms, and tense music to intensify the crisis
+                                atmosphere.</strong></li>
+                        </ul>
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="card-inner">
-                    <div class="card-front" style="background-color: #E6F3FF;">
-                        <p style="text-align: left; font-size: 1.2em; color: #87CEFA;"><strong>G3.6 标题</strong></p>
-                        <ul style="text-align: left; list-style-type: disc; padding-left: 20px; font-size: 0.2em; font-family: Arial, sans-serif;">
-                            <li>描述点1</li>
-                            <li>描述点2</li>
-                            <li>描述点3</li>
-                        </ul>
+                    <div class="card-front" style="background-color: #392f5a;">
+                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong>G3.5 Threat Amplification</strong></p>
                     </div>
                     <div class="card-back">
-                        <img src="images/fear_g3_6.gif" alt="Fear-G3.6" width="100%" height="100%">
+                        <video controls style="width: 100%; height: auto;">
+                            <source src="video/G3.5- 威胁放大[updated].mp4" type="video/mp4">
+                            <source src="video/G3.5- 威胁放大[updated].webm" type="video/webm">
+                            您的浏览器不支持 HTML5 视频。
+                            <a href="video/G3.5- 威胁放大[updated].mp4">下载视频</a>
+                        </video>
+                        <ul style="text-align: left; list-style-type: none; padding-left: 15px; font-size: 0.000000008em; font-family: system-ui; serif; margin-top: 2px; color: #800080;">
+                            <li><strong>✏️Accumulate the same data, such as an increase in case numbers, shown by
+                                multiplying virus icons on the screen.</strong></li>
+                            <li><strong>🔊As on-screen elements increase, amplify the volume and intensity of sound
+                                effects, like loud and chaotic ambient noises, to simulate the spread of panic.</strong></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
         <section id="anger">
-            <h2>愤怒</h2>
+            <h2 style="color: #780000;">Anger</h2>
             <div class="card">
                 <div class="card-inner">
-                    <div class="card-front" style="background-color: #E6F3FF;">
-                        <p style="text-align: left; font-size: 1.2em; color: #87CEFA;"><strong>G4.1 标题</strong></p>
-                        <ul style="text-align: left; list-style-type: disc; padding-left: 20px; font-size: 0.2em; font-family: Arial, sans-serif;">
-                            <li>描述点1</li>
-                            <li>描述点2</li>
-                            <li>描述点3</li>
-                        </ul>
+                    <div class="card-front" style="background-color: #780000;">
+                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong>G4.1.1 Use of Red and High-
+                            Contrast Text</strong></p>
                     </div>
                     <div class="card-back">
-                        <img src="images/anger_g4_1.gif" alt="Anger-G4.1" width="100%" height="100%">
+                        <video controls style="width: 100%; height: auto;">
+                            <source src="video/G4.1.1 色彩冲突.mp4" type="video/mp4">
+                            <source src="video/G4.1.1 色彩冲突.webm" type="video/webm">
+                            您的浏览器不支持 HTML5 视频。
+                            <a href="video/G4.1.1 色彩冲突.mp4">下载视频</a>
+                        </video>
+                        <ul style="text-align: left; list-style-type: none; padding-left: 15px; font-size: 0.000000008em; font-family: system-ui; serif; margin-top: 2px; color: #780000;">
+                            <li><strong>✏️Employing white or black text against a red background creates a strong visual contrast, quickly
+                                drawing attention and evoking feelings of anger, while also enhancing the sense of urgency and impact of the information.</strong></li>
+                            <li><strong>🔊Add sound effects to assist as textual information appears, emphasizing new points and enhancing the sense of anger.</strong></li>
+                        </ul>
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="card-inner">
-                    <div class="card-front" style="background-color: #E6F3FF;">
-                        <p style="text-align: left; font-size: 1.2em; color: #87CEFA;"><strong>G4.2 标题</strong></p>
-                        <ul style="text-align: left; list-style-type: disc; padding-left: 20px; font-size: 0.2em; font-family: Arial, sans-serif;">
-                            <li>描述点1</li>
-                            <li>描述点2</li>
-                            <li>描述点3</li>
-                        </ul>
+                    <div class="card-front" style="background-color: #780000;">
+                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong>G4.1.2 High Saturation Base Colors and Dynamic Color Changes</strong></p>
                     </div>
                     <div class="card-back">
-                        <img src="images/anger_g4_2.gif" alt="Anger-G4.2" width="100%" height="100%">
+                        <video controls style="width: 100%; height: auto;">
+                            <source src="video/G4.1.2-高饱和度底色与动态颜色变化.mp4" type="video/mp4">
+                            <source src="video/G4.1.2-高饱和度底色与动态颜色变化.webm" type="video/webm">
+                            您的浏览器不支持 HTML5 视频。
+                            <a href="video/G4.1.2-高饱和度底色与动态颜色变化.mp4">下载视频</a>
+                        </video>
+                        <ul style="text-align: left; list-style-type: none; padding-left: 15px; font-size: 0.000000008em; font-family: system-ui; serif; margin-top: 2px; color: #780000;">
+                            <li><strong>✏️Utilizing vivid, high-saturation base colors
+                                like orange, combined with dynamic changes in color such as deepening hues or increasing curves, symbolizes escalating
+                                issues, further intensifying emotions of anger and dissatisfaction.</strong></li>
+                            <li><strong>🔊As the hues deepen and the dynamic colors change,
+                                the volume gradually increases, intensifying the sense of anger from an auditory perspective.</strong></li>
+                        </ul>
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="card-inner">
-                    <div class="card-front" style="background-color: #E6F3FF;">
-                        <p style="text-align: left; font-size: 1.2em; color: #87CEFA;"><strong>G4.3 标题</strong></p>
-                        <ul style="text-align: left; list-style-type: disc; padding-left: 20px; font-size: 0.2em; font-family: Arial, sans-serif;">
-                            <li>描述点1</li>
-                            <li>描述点2</li>
-                            <li>描述点3</li>
-                        </ul>
+                    <div class="card-front" style="background-color: #780000;">
+                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong>G4.2 Visual Impact</strong></p>
                     </div>
                     <div class="card-back">
-                        <img src="images/anger_g4_3.gif" alt="Anger-G4.3" width="100%" height="100%">
+                        <video controls style="width: 100%; height: auto;">
+                            <source src="video/G4.2 视觉冲击.mp4" type="video/mp4">
+                            <source src="video/G4.2 视觉冲击.webm" type="video/webm">
+                            您的浏览器不支持 HTML5 视频。
+                            <a href="video/G4.2 视觉冲击.mp4">下载视频</a>
+                        </video>
+                        <ul style="text-align: left; list-style-type: none; padding-left: 15px; font-size: 0.000000008em; font-family: system-ui; serif; margin-top: 2px; color: #780000;">
+                            <li><strong>✏️Employ sudden visual impacts such as rapid flashing images or the abrupt appearance of
+                                large text to simulate the eruption of anger. </strong></li>
+                            <li><strong>🔊Use sudden, loud explosion sounds or screams, synchronized with the
+                                visual impact, to intensify the sense of sudden anger.</strong></li>
+                        </ul>
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="card-inner">
-                    <div class="card-front" style="background-color: #E6F3FF;">
-                        <p style="text-align: left; font-size: 1.2em; color: #87CEFA;"><strong>G4.4 标题</strong></p>
-                        <ul style="text-align: left; list-style-type: disc; padding-left: 20px; font-size: 0.2em; font-family: Arial, sans-serif;">
-                            <li>描述点1</li>
-                            <li>描述点2</li>
-                            <li>描述点3</li>
-                        </ul>
+                    <div class="card-front" style="background-color: #780000;">
+                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong>G4.3 Dynamic Anger</strong></p>
                     </div>
                     <div class="card-back">
-                        <img src="images/anger_g4_4.gif" alt="Anger-G4.4" width="100%" height="100%">
+                        <video controls style="width: 100%; height: auto;">
+                            <source src="video/G4.3 动态愤怒.mp4" type="video/mp4">
+                            <source src="video/G4.3 动态愤怒.webm" type="video/webm">
+                            您的浏览器不支持 HTML5 视频。
+                            <a href="video/G4.3 动态愤怒.mp4">下载视频</a>
+                        </video>
+                        <ul style="text-align: left; list-style-type: none; padding-left: 15px; font-size: 0.000000008em; font-family: system-ui; serif; margin-top: 2px; color: #780000;">
+                            <li><strong>✏️Quickly zoom in/out to show dramatic changes in data, such as sharp increases or
+                                decreases in prices, using dynamic charts to represent the causes of anger.</strong></li>
+                            <li><strong>🔊Accompany the intense fluctuations in the charts with escalated sound effects, such as accelerated heartbeat sounds or enhanced wind noises, reflecting tension and
+                                dissatisfaction.</strong></li>
+                        </ul>
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="card-inner">
-                    <div class="card-front" style="background-color: #E6F3FF;">
-                        <p style="text-align: left; font-size: 1.2em; color: #87CEFA;"><strong>G4.5 标题</strong></p>
-                        <ul style="text-align: left; list-style-type: disc; padding-left: 20px; font-size: 0.2em;">
-                            <li>描述点1</li>
-                            <li>描述点2</li>
-                            <li>描述点3</li>
-                        </ul>
+                    <div class="card-front" style="background-color: #780000;">
+                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong>G4.4 Layering Elements</strong></p>
                     </div>
                     <div class="card-back">
-                        <img src="images/anger_g4_5.gif" alt="Anger-G4.5" width="100%" height="100%">
+                        <video controls style="width: 100%; height: auto;">
+                            <source src="video/G4.4 元素叠加.mp4" type="video/mp4">
+                            <source src="video/G4.4 元素叠加.webm" type="video/webm">
+                            您的浏览器不支持 HTML5 视频。
+                            <a href="video/G4.4 元素叠加.mp4">下载视频</a>
+                        </video>
+                        <ul style="text-align: left; list-style-type: none; padding-left: 15px; font-size: 0.000000008em; font-family: system-ui; serif; margin-top: 2px; color: #780000;">
+                            <li><strong>✏️Continuously add visual elements of accusation or protest, such as banners of
+                                protesters or angry faces.</strong></li>
+                            <li><strong>🔊Include background noises of crowd uproar, chants, or protest sounds to make the angry
+                                social backdrop more pronounced and realistic.</strong></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
         <section id="joy">
-            <h2>喜悦</h2>
+            <h2 style="color: #F2CC8F;">Joy</h2>
             <div class="card">
                 <div class="card-inner">
-                    <div class="card-front" style="background-color: #E6F3FF;">
-                        <p style="text-align: left; font-size: 1.2em; color: #87CEFA;"><strong>G5.1 标题</strong></p>
-                        <ul style="text-align: left; list-style-type: disc; padding-left: 20px; font-size: 0.2em;">
-                            <li>描述点1</li>
-                            <li>描述点2</li>
-                            <li>描述点3</li>
-                        </ul>
+                    <div class="card-front" style="background-color: #F2CC8F;">
+                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong>G5.1 Vibrant Color Utilization</strong></p>
                     </div>
                     <div class="card-back">
-                        <img src="images/joy_g5_1.gif" alt="Joy-G5.1" width="100%" height="100%">
+                        <video controls style="width: 100%; height: auto;">
+                            <source src="video/G5.1 -色彩活力.mp4" type="video/mp4">
+                            <source src="video/G5.1 -色彩活力.webm" type="video/webm">
+                            您的浏览器不支持 HTML5 视频。
+                            <a href="video/G5.1 -色彩活力.mp4">下载视频</a>
+                        </video>
+                        <ul style="text-align: left; list-style-type: none; padding-left: 15px; font-size: 0.000000008em; font-family: system-ui; serif; margin-top: 2px; color: #d8a24c;">
+                            <li><strong>✏️Implement warm tones such as red and yellow to evoke energy and positivity.
+                                Utilize high contrast combinations like blue background with black text or white background with green dots to effectively
+                                highlight key data and information, ensuring they capture the viewer’s attention.</strong></li>
+                            <li><strong>🔊Integrate high-tempo and high-pitch
+                                musical elements such as cheerful piano tunes or lively strings to reinforce the positive atmosphere.</strong></li>
+                        </ul>
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="card-inner">
-                    <div class="card-front" style="background-color: #E6F3FF;">
-                        <p style="text-align: left; font-size: 1.2em; color: #87CEFA;"><strong>G5.2 标题</strong></p>
-                        <ul style="text-align: left; list-style-type: disc; padding-left: 20px; font-size: 0.2em;">
-                            <li>描述点1</li>
-                            <li>描述点2</li>
-                            <li>描述点3</li>
-                        </ul>
+                    <div class="card-front" style="background-color: #F2CC8F;">
+                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong>G5.2 Dynamic Data Presentation</strong></p>
                     </div>
                     <div class="card-back">
-                        <img src="images/joy_g5_2.gif" alt="Joy-G5.2" width="100%" height="100%">
+                        <video controls style="width: 100%; height: auto;">
+                            <source src="video/G5.2- 动态愉悦的数据 - Trim.mp4" type="video/mp4">
+                            <source src="video/G5.2- 动态愉悦的数据 - Trim.webm" type="video/webm">
+                            您的浏览器不支持 HTML5 视频。
+                            <a href="video/G5.2- 动态愉悦的数据 - Trim.mp4">下载视频</a>
+                        </video>
+                        <ul style="text-align: left; list-style-type: none; padding-left: 15px; font-size: 0.000000008em; font-family: system-ui; serif; margin-top: 2px; color: #d8a24c;">
+                            <li><strong>✏️Employ zoom techniques in conjunction with dynamic graphical repre-
+                                sentations such as bouncing or dancing bar charts, and explosive scatter plots. These elements should visually represent
+                                positive changes in the data, enhancing viewer engagement and understanding.</strong></li>
+                            <li><strong>🔊Accompany the dynamic charts with
+                                cheerful sound effects, like bouncing notes or light percussion, making the data presentation more vibrant and entertaining.</strong></li>
+                        </ul>
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="card-inner">
-                    <div class="card-front" style="background-color: #E6F3FF;">
-                        <p style="text-align: left; font-size: 1.2em; color: #87CEFA;"><strong>G5.3 标题</strong></p>
-                        <ul style="text-align: left; list-style-type: disc; padding-left: 20px; font-size: 0.2em;">
-                            <li>描述点1</li>
-                            <li>描述点2</li>
-                            <li>描述点3</li>
-                        </ul>
+                    <div class="card-front" style="background-color: #F2CC8F;">
+                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong>G5.3 Fast Rhythm Shots</strong></p>
                     </div>
                     <div class="card-back">
-                        <img src="images/joy_g5_3.gif" alt="Joy-G5.3" width="100%" height="100%">
+                        <video controls style="width: 100%; height: auto;">
+                            <source src="video/G5.3- 节奏快镜.mp4" type="video/mp4">
+                            <source src="video/G5.3- 节奏快镜.webm" type="video/webm">
+                            您的浏览器不支持 HTML5 视频。
+                            <a href="video/G5.3- 节奏快镜.mp4">下载视频</a>
+                        </video>
+                        <ul style="text-align: left; list-style-type: none; padding-left: 15px; font-size: 0.000000008em; font-family: system-ui; serif; margin-top: 2px; color: #d8a24c;">
+                            <li><strong>✏️Increase visual vitality and joy by using quick camera switches or rhythmically
+                                strong camera movements, such as swinging or spinning.</strong></li>
+                            <li><strong>🔊Pair these fast camera movements with rapid-paced music
+                                and sound effects to enhance the video's dynamic feel and cheerful atmosphere.</strong></li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -653,128 +796,181 @@
         </section>
 
         <section id="trust">
-            <h2>信任</h2>
+            <h2 style="color: #87CEFA;">Trust</h2>
             <div class="card">
                 <div class="card-inner">
-                    <div class="card-front" style="background-color: #E6F3FF;">
-                        <p style="text-align: left; font-size: 1.2em; color: #87CEFA;"><strong>G6.1 标题</strong></p>
-                        <ul style="text-align: left; list-style-type: disc; padding-left: 20px; font-size: 0.2em;">
-                            <li>描述点1</li>
-                            <li>描述点2</li>
-                            <li>描述点3</li>
-                        </ul>
+                    <div class="card-front" style="background-color: #87CEFA;">
+                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong>G6.1 Tranquil Scanning</strong></p>
                     </div>
                     <div class="card-back">
-                        <img src="images/trust_g6_1.gif" alt="Trust-G6.1" width="100%" height="100%">
+                        <video controls style="width: 100%; height: auto;">
+                            <source src="video/G6.1平和扫视.mp4" type="video/mp4">
+                            <source src="video/G6.1平和扫视.webm" type="video/webm">
+                            您的浏览器不支持 HTML5 视频。
+                            <a href="video/G6.1平和扫视.mp4">下载视频</a>
+                        </video>
+                        <ul style="text-align: left; list-style-type: none; padding-left: 15px; font-size: 0.000000008em; font-family: system-ui; serif; margin-top: 2px; color: #3d96ce;">
+                            <li><strong>✏️Employ smooth camera movements such as slow horizontal sweeps or gentle zooms
+                                to foster a sense of peace and acceptance.</strong></li>
+                            <li><strong>🔊Complement this with subdued background music, like low-key strings or
+                                soft flute sounds, emphasizing inner tranquility and harmony.</strong></li>
+                        </ul>
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="card-inner">
-                    <div class="card-front" style="background-color: #E6F3FF;">
-                        <p style="text-align: left; font-size: 1.2em; color: #87CEFA;"><strong>G6.2 标题</strong></p>
-                        <ul style="text-align: left; list-style-type: disc; padding-left: 20px; font-size: 0.2em;">
-                            <li>描述点1</li>
-                            <li>描述点2</li>
-                            <li>描述点3</li>
-                        </ul>
+                    <div class="card-front" style="background-color: #87CEFA;">
+                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong>G6.2.1 Integrating
+                            Natural Elements</strong></p>
                     </div>
                     <div class="card-back">
-                        <img src="images/trust_g6_2.gif" alt="Trust-G6.2" width="100%" height="100%">
+                        <video controls style="width: 100%; height: auto;">
+                            <source src="video/G6.2.1 融入自然元素.mp4" type="video/mp4">
+                            <source src="video/G6.2.1 融入自然元素.webm" type="video/webm">
+                            您的浏览器不支持 HTML5 视频。
+                            <a href="video/G6.2.1 融入自然元素.mp4">下载视频</a>
+                        </video>
+                        <ul style="text-align: left; list-style-type: none; padding-left: 15px; font-size: 0.000000008em; font-family: system-ui; serif; margin-top: 2px; color: #3d96ce;">
+                            <li><strong>✏️Use harmonious color combinations, such as blue and green, which are typically associated
+                                with calmness and nature.</strong></li>
+                            <li><strong>🔊Incorporate natural sounds, like the whisper of the wind, flowing water, or birdsong, to
+                                further enhance the atmosphere of harmony and tranquility.</strong></li>
+                        </ul>
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="card-inner">
-                    <div class="card-front" style="background-color: #E6F3FF;">
-                        <p style="text-align: left; font-size: 1.2em; color: #87CEFA;"><strong>G6.3 标题</strong></p>
-                        <ul style="text-align: left; list-style-type: disc; padding-left: 20px; font-size: 0.2em;">
-                            <li>描述点1</li>
-                            <li>描述点2</li>
-                            <li>描述点3</li>
-                        </ul>
+                    <div class="card-front" style="background-color: #87CEFA;">
+                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong>G6.2.2 Information Differentiation Through Color Depth</strong></p>
                     </div>
                     <div class="card-back">
-                        <img src="images/trust_g6_3.gif" alt="Trust-G6.3" width="100%" height="100%">
+                        <video controls style="width: 100%; height: auto;">
+                            <source src="video/G6.2.2 ]通过颜色深度区分信息.mp4" type="video/mp4">
+                            <source src="video/G6.2.2 ]通过颜色深度区分信息.webm" type="video/webm">
+                            您的浏览器不支持 HTML5 视频。
+                            <a href="video/G6.2.2 ]通过颜色深度区分信息.mp4">下载视频</a>
+                        </video>
+                        <ul style="text-align: left; list-style-type: none; padding-left: 15px; font-size: 0.000000008em; font-family: system-ui; serif; margin-top: 2px; color: #3d96ce;">
+                            <li><strong>✏️Differentiate the importance of information through variations in color depth; use darker colors for critical
+                                explanatory sections to build trust and lighter colors for contrasting details to help viewers distinguish between primary
+                                and secondary information.</strong></li>
+                            <li><strong>🔊Highlight the primary and secondary information contrast under colors through changes in
+                                sound rhythm.</strong></li>
+                        </ul>
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="card-inner">
-                    <div class="card-front" style="background-color: #E6F3FF;">
-                        <p style="text-align: left; font-size: 1.2em; color: #87CEFA;"><strong>G6.4 标题</strong></p>
-                        <ul style="text-align: left; list-style-type: disc; padding-left: 20px; font-size: 0.2em;">
-                            <li>描述点1</li>
-                            <li>描述点2</li>
-                            <li>描述点3</li>
-                        </ul>
+                    <div class="card-front" style="background-color: #87CEFA;">
+                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong>G6.3 Cyclical or Repetitive Visual Elements</strong></p>
                     </div>
                     <div class="card-back">
-                        <img src="images/trust_g6_4.gif" alt="Trust-G6.4" width="100%" height="100%">
+                        <video controls style="width: 100%; height: auto;">
+                            <source src="video/G6.3 循环或重复的视觉元素.mp4" type="video/mp4">
+                            <source src="video/G6.3 循环或重复的视觉元素.webm" type="video/webm">
+                            您的浏览器不支持 HTML5 视频。
+                            <a href="video/G6.3 循环或重复的视觉元素.mp4">下载视频</a>
+                        </video>
+                        <ul style="text-align: left; list-style-type: none; padding-left: 15px; font-size: 0.000000008em; font-family: system-ui; serif; margin-top: 2px; color: #3d96ce;">
+                            <li><strong>✏️Use cyclical or repetitive graphics and animations, such as
+                                looping shapes or periodically appearing visual elements, to symbolize acceptance and understanding.</strong></li>
+                            <li><strong>🔊Feature recurring melodies or rhythms in the background music to reinforce themes of acceptance and provide a
+                                reassuring atmosphere.</strong></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
+        </section>
 
         <section id="surprise">
-            <h2>惊喜</h2>
+            <h2 style="color: #ff771c;">Surprise</h2>
             <div class="card">
                 <div class="card-inner">
-                    <div class="card-front" style="background-color: #E6F3FF;">
-                        <p style="text-align: left; font-size: 1.2em; color: #87CEFA;"><strong>G7.1 标题</strong></p>
-                        <ul style="text-align: left; list-style-type: disc; padding-left: 20px; font-size: 0.2em;">
-                            <li>描述点1</li>
-                            <li>描述点2</li>
-                            <li>描述点3</li>
-                        </ul>
+                    <div class="card-front" style="background-color: #ff771c;">
+                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong>G7.1 Sudden Visual Changes</strong></p>
                     </div>
                     <div class="card-back">
-                        <img src="images/surprise_g7_1.gif" alt="Surprise-G7.1" width="100%" height="100%">
+                        <video controls style="width: 100%; height: auto;">
+                            <source src="video/G7.1突然的视觉变化.mp4" type="video/mp4">
+                            <source src="video/G7.1突然的视觉变化.webm" type="video/webm">
+                            您的浏览器不支持 HTML5 视频。
+                            <a href="video/G7.1突然的视觉变化.mp4">下载视频</a>
+                        </video>
+                        <ul style="text-align: left; list-style-type: none; padding-left: 15px; font-size: 0.000000008em; font-family: system-ui; serif; margin-top: 2px; color: #FF9F1C;">
+                            <li><strong>✏️Employ zoom in/out techniques with sudden visual transitions or rapid image
+                                changes, such as quickly expanding data charts or unexpected graphical appearances.</strong></li>
+                            <li><strong>🔊Synchronize sudden sound
+                                effects with the visual changes, such as drum hits or sharp bell sounds, to enhance the sensation of surprise.</strong></li>
+                        </ul>
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="card-inner">
-                    <div class="card-front" style="background-color: #E6F3FF;">
-                        <p style="text-align: left; font-size: 1.2em; color: #87CEFA;"><strong>G7.2 标题</strong></p>
-                        <ul style="text-align: left; list-style-type: disc; padding-left: 20px; font-size: 0.2em;">
-                            <li>描述点1</li>
-                            <li>描述点2</li>
-                            <li>描述点3</li>
-                        </ul>
+                    <div class="card-front" style="background-color: #ff771c;">
+                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong>G7.2 Color Burst</strong></p>
                     </div>
                     <div class="card-back">
-                        <img src="images/surprise_g7_2.gif" alt="Surprise-G7.2" width="100%" height="100%">
+                        <video controls style="width: 100%; height: auto;">
+                            <source src="video/G7.2 色彩爆发.mp4" type="video/mp4">
+                            <source src="video/G7.2 色彩爆发.webm" type="video/webm">
+                            您的浏览器不支持 HTML5 视频。
+                            <a href="video/G7.2 色彩爆发.mp4">下载视频</a>
+                        </video>
+                        <ul style="text-align: left; list-style-type: none; padding-left: 15px; font-size: 0.000000008em; font-family: system-ui; serif; margin-top: 2px; color: #FF9F1C;">
+                            <li><strong>✏️In maps or charts, use blue to represent symbolic meanings, allowing the color to increase
+                                continuously, with variations in shade indicating levels of trust. The dispersal and gathering of colors symbolize the
+                                dynamic flow of data, stimulating viewer curiosity and surprise.</strong></li>
+                            <li><strong>🔊Introduce distinct sound effects as the colors change,
+                                such as shifting from soft music to dramatically intense tones.</strong></li>
+                        </ul>
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="card-inner">
-                    <div class="card-front" style="background-color: #E6F3FF;">
-                        <p style="text-align: left; font-size: 1.2em; color: #87CEFA;"><strong>G7.3 标题</strong></p>
-                        <ul style="text-align: left; list-style-type: disc; padding-left: 20px; font-size: 0.2em;">
-                            <li>描述点1</li>
-                            <li>描述点2</li>
-                            <li>描述点3</li>
-                        </ul>
+                    <div class="card-front" style="background-color: #ff771c;">
+                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong>G7.3 Contrary Data Trends</strong></p>
                     </div>
                     <div class="card-back">
-                        <img src="images/surprise_g7_3.gif" alt="Surprise-G7.3" width="100%" height="100%">
+                        <video controls style="width: 100%; height: auto;">
+                            <source src="video/G7.3- 数据趋势相反.mp4" type="video/mp4">
+                            <source src="video/G7.3- 数据趋势相反.webm" type="video/webm">
+                            您的浏览器不支持 HTML5 视频。
+                            <a href="video/G7.3- 数据趋势相反.mp4">下载视频</a>
+                        </video>
+                        <ul style="text-align: left; list-style-type: none; padding-left: 15px; font-size: 0.000000008em; font-family: system-ui; serif; margin-top: 2px; color: #FF9F1C;">
+                            <li><strong>✏️Start with camera movements that follow the trends of data movements. As time
+                                progresses, the camera movements begin to contrast with the data trends.</strong></li>
+                            <li><strong>🔊Initially, maintain a consistent sound design;
+                                as the camera and data movements diverge, introduce a noticeable difference in the sound rhythm.</strong></li>
+                        </ul>
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="card-inner">
-                    <div class="card-front" style="background-color: #E6F3FF;">
-                        <p style="text-align: left; font-size: 1.2em; color: #87CEFA;"><strong>G7.4 标题</strong></p>
-                        <ul style="text-align: left; list-style-type: disc; padding-left: 20px; font-size: 0.2em;">
-                            <li>描述点1</li>
-                            <li>描述点2</li>
-                            <li>描述点3</li>
-                        </ul>
+                    <div class="card-front" style="background-color: #ff771c;">
+                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong>G7.4 Unexpected Visual Elements</strong></p>
                     </div>
                     <div class="card-back">
-                        <img src="images/surprise_g7_4.gif" alt="Surprise-G7.4" width="100%" height="100%">
+                        <video controls style="width: 100%; height: auto;">
+                            <source src="video/G7.4 使用意想不到的视觉元素.mp4" type="video/mp4">
+                            <source src="video/G7.4 使用意想不到的视觉元素.webm" type="video/webm">
+                            您的浏览器不支持 HTML5 视频。
+                            <a href="video/G7.4 使用意想不到的视觉元素.mp4">下载视频</a>
+                        </video>
+                        <ul style="text-align: left; list-style-type: none; padding-left: 15px; font-size: 0.000000008em; font-family: system-ui; serif; margin-top: 2px; color: #FF9F1C;">
+                            <li><strong>✏️Introduce unexpected elements or characters, such as suddenly appearing
+                                animated characters or graphics, to break away from conventional data presentation styles.</strong></li>
+                            <li><strong>🔊Accompany these unexpected
+                                visual elements with surprising sound effects or changes in the theme music, such as humorous, whimsical music or
+                                sounds of astonishment, to increase audience curiosity and interest.</strong></li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -782,79 +978,111 @@
         </section>
 
         <section id="disgust">
-            <h2>厌恶</h2>
+            <h2 style="color: #452e1e;">Disgust</h2>
             <div class="card">
                 <div class="card-inner">
-                    <div class="card-front" style="background-color: #E6F3FF;">
-                        <p style="text-align: left; font-size: 1.2em; color: #87CEFA;"><strong>G8.1 标题</strong></p>
-                        <ul style="text-align: left; list-style-type: disc; padding-left: 20px; font-size: 0.2em;">
-                            <li>描述点1</li>
-                            <li>描述点2</li>
-                            <li>描述点3</li>
-                        </ul>
+                    <div class="card-front" style="background-color: #452e1e;">
+                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong>G8.1 Negative Focus </strong></p>
                     </div>
                     <div class="card-back">
-                        <img src="images/disgust_g8_1.gif" alt="Disgust-G8.1" width="100%" height="100%">
+                        <video controls style="width: 100%; height: auto;">
+                            <source src="video/G8.1- 负面聚焦.mp4" type="video/mp4">
+                            <source src="video/G8.1- 负面聚焦.webm" type="video/webm">
+                            您的浏览器不支持 HTML5 视频。
+                            <a href="video/G8.1- 负面聚焦.mp4">下载视频</a>
+                        </video>
+                        <ul style="text-align: left; list-style-type: none; padding-left: 15px; font-size: 0.000000008em; font-family: system-ui; serif; margin-top: 2px; color: #8B4513;">
+                            <li><strong>✏️Zoom in to focus on unpleasant data points or images, such as areas with high
+                                pollution levels. Zooming out reveals the overall adverse effects.</strong></li>
+                            <li><strong>🔊Use discordant tones or harsh sound effects to increase
+                                discomfort.</strong></li>
+                        </ul>
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="card-inner">
-                    <div class="card-front" style="background-color: #E6F3FF;">
-                        <p style="text-align: left; font-size: 1.2em; color: #87CEFA;"><strong>G8.2 标题</strong></p>
-                        <ul style="text-align: left; list-style-type: disc; padding-left: 20px; font-size: 0.2em;">
-                            <li>描述点1</li>
-                            <li>描述点2</li>
-                            <li>描述点3</li>
-                        </ul>
+                    <div class="card-front" style="background-color: #452e1e;">
+                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong>G8.2 Dynamic Disgust</strong></p>
                     </div>
                     <div class="card-back">
-                        <img src="images/disgust_g8_2.gif" alt="Disgust-G8.2" width="100%" height="100%">
+                        <video controls style="width: 100%; height: auto;">
+                            <source src="video/G8.2动态厌恶.mp4" type="video/mp4">
+                            <source src="video/G8.2动态厌恶.webm" type="video/webm">
+                            您的浏览器不支持 HTML5 视频。
+                            <a href="video/G8.2动态厌恶.mp4">下载视频</a>
+                        </video>
+                        <ul style="text-align: left; list-style-type: none; padding-left: 15px; font-size: 0.000000008em; font-family: system-ui; serif; margin-top: 2px; color: #8B4513;">
+                            <li><strong>✏️Slow camera movement over displeasing images or data, such as piles of trash or the
+                                spread of pollution shown dynamically.</strong></li>
+                            <li><strong>🔊Low and slow music, or unpleasant noises like chewing sounds or the sound of
+                                slime.</strong></li>
+                        </ul>
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="card-inner">
-                    <div class="card-front" style="background-color: #E6F3FF;">
-                        <p style="text-align: left; font-size: 1.2em; color: #87CEFA;"><strong>G8.3 标题</strong></p>
-                        <ul style="text-align: left; list-style-type: disc; padding-left: 20px; font-size: 0.2em;">
-                            <li>描述点1</li>
-                            <li>描述点2</li>
-                            <li>描述点3</li>
-                        </ul>
+                    <div class="card-front" style="background-color: #452e1e;">
+                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong>G8.3 Discomfort Color Change</strong></p>
                     </div>
                     <div class="card-back">
-                        <img src="images/disgust_g8_3.gif" alt="Disgust-G8.3" width="100%" height="100%">
+                        <video controls style="width: 100%; height: auto;">
+                            <source src="video/G8.3 不安色变.mp4" type="video/mp4">
+                            <source src="video/G8.3 不安色变.webm" type="video/webm">
+                            您的浏览器不支持 HTML5 视频。
+                            <a href="video/G8.3 不安色变.mp4">下载视频</a>
+                        </video>
+                        <ul style="text-align: left; list-style-type: none; padding-left: 15px; font-size: 0.000000008em; font-family: system-ui; serif; margin-top: 2px; color: #8B4513;">
+                            <li><strong>✏️Use contrasting colors and a gray background: Symbolic color semantics
+                                signify conflict or opposition, such as the red and blue representing the two main political parties in the USA, while a gray
+                                background conveys a dull or boring feeling, providing contrast to the high saturation focus points, thus highlighting the
+                                repulsive data or information.</strong></li>
+                            <li><strong>🔊As the colors transition unpleasantly, the sound becomes rougher, using low frequencies
+                                and noise.</strong></li>
+                        </ul>
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="card-inner">
-                    <div class="card-front" style="background-color: #E6F3FF;">
-                        <p style="text-align: left; font-size: 1.2em; color: #87CEFA;"><strong>G8.4 标题</strong></p>
-                        <ul style="text-align: left; list-style-type: disc; padding-left: 20px; font-size: 0.2em;">
-                            <li>描述点1</li>
-                            <li>描述点2</li>
-                            <li>描述点3</li>
-                        </ul>
+                    <div class="card-front" style="background-color: #452e1e;">
+                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong>G8.4 Mixed Media</strong></p>
                     </div>
                     <div class="card-back">
-                        <img src="images/disgust_g8_4.gif" alt="Disgust-G8.4" width="100%" height="100%">
+                        <video controls style="width: 100%; height: auto;">
+                            <source src="video/G8.4-混合媒介.mp4" type="video/mp4">
+                            <source src="video/G8.4-混合媒介.webm" type="video/webm">
+                            您的浏览器不支持 HTML5 视频。
+                            <a href="video/G8.4-混合媒介.mp4">下载视频</a>
+                        </video>
+                        <ul style="text-align: left; list-style-type: none; padding-left: 15px; font-size: 0.000000008em; font-family: system-ui; serif; margin-top: 2px; color: #8B4513;">
+                            <li><strong>✏️Blend inappropriate images, videos, and charts, such as actual footage of a landfill
+                                integrated with pollution data charts.</strong></li>
+                            <li><strong>🔊Combine ambient noise, displeasing background music, and alert tones to
+                                intensify the feeling of disgust.</strong></li>
+                        </ul>
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="card-inner">
-                    <div class="card-front" style="background-color: #E6F3FF;">
-                        <p style="text-align: left; font-size: 1.2em; color: #87CEFA;"><strong>G8.5 标题</strong></p>
-                        <ul style="text-align: left; list-style-type: disc; padding-left: 20px; font-size: 0.2em;">
-                            <li>描述点1</li>
-                            <li>描述点2</li>
-                            <li>描述点3</li>
-                        </ul>
+                    <div class="card-front" style="background-color: #452e1e;">
+                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong>G8.5 Incremental Elements</strong></p>
                     </div>
                     <div class="card-back">
-                        <img src="images/disgust_g8_5.gif" alt="Disgust-G8.5" width="100%" height="100%">
+                        <video controls style="width: 100%; height: auto;">
+                            <source src="video/G8.5 增量元素.mp4" type="video/mp4">
+                            <source src="video/G8.5 增量元素.webm" type="video/webm">
+                            您的浏览器不支持 HTML5 视频。
+                            <a href="video/G8.5 增量元素.mp4">下载视频</a>
+                        </video>
+                        <ul style="text-align: left; list-style-type: none; padding-left: 15px; font-size: 0.000000008em; font-family: system-ui; serif; margin-top: 2px; color: #8B4513;">
+                            <li><strong>✏️For example, show the increase in the amount of trash by increasing the number
+                                of trash heap icons in the visuals.</strong></li>
+                            <li><strong>🔊As elements increase, amplify the complexity and discomfort of the background
+                                noise, such as increasingly loud traffic noise.</strong></li>
+                        </ul>
                     </div>
                 </div>
             </div>
