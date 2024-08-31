@@ -3,21 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Video Climax</title>
+    <title>At the Peak: Guidelines for Creating Climaxes in Data Videos</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-image: url('background.jpg');
+            font-family: Noto Sans, sans-serif;
+            background-image: url('images/bgline.png');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
+            background-attachment: fixed;
             margin: 0;
             padding: 0;
-            background-color: #CCDBFD;
+            background-color: #ccdbfd00;
+            transition: background-image 0.5s ease; /* 添加过渡效果 */
         }
         
         .top-nav {
-            background-color: #ABC4FF;
+            background: linear-gradient(to right, #fdb4cf, #abcdff);
             overflow: hidden;
             position: fixed;
             top: 0;
@@ -31,11 +33,11 @@
         }
         
         .top-nav.transparent {
-            background-color: #c1d3fe8c;
+            background: linear-gradient(to right, #ffc1d7d0, rgba(183, 214, 253, 0.815));
         }
         
         .top-nav .logo {
-            font-size: 30px;
+            font-size: 23px;
             font-weight: bold;
             background: linear-gradient(45deg, #ffffff, #ffffff);
             -webkit-background-clip: text;
@@ -55,18 +57,20 @@
         }
         
         .top-nav a:hover {
-            background-color: #f9b1cc;
+            background-color: #f9b1cb1a;
             color: rgb(255, 255, 255);
         }
-        
         .side-nav {
             height: 100%;
-            width: 200px;
+            width: 180px;
             position: fixed;
             z-index: 1;
             top: 60px;
             left: 0;
-            background-color: #C1D3FE;
+            background-image: url('images/open.png');
+            background-size: cover;
+            background-position: left ;
+            background-repeat: no-repeat;
             overflow-x: hidden;
             padding-top: 20px;
         }
@@ -75,17 +79,18 @@
             padding: 6px 8px 6px 16px;
             text-decoration: none;
             font-size: 25px;
-            color: #f2f2f2;
+            color: #ffffffc7;
             display: block;
         }
         
         .side-nav a:hover {
-            color: #f1f1f1;
+            color: #fff9f9;
         }
         
         .main {
             margin-left: 200px;
             padding: 60px 10px 0;
+            font-family: Noto Sans, sans-serif;
         }
         
         .card {
@@ -95,6 +100,7 @@
             perspective: 1000px;
             margin: 15px;
             display: inline-block;
+            font-family: Noto Sans, sans-serif; /* 统一字体 */
         }
         
         .card-inner {
@@ -116,6 +122,7 @@
             height: 100%;
             -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
+            
         }
         
         .card-front {
@@ -124,19 +131,31 @@
         }
         
         .card-back {
-            background-color: #CCDBFD;
+            background-color: #ffffffb1;
             color: white;
             transform: rotateY(180deg);
         }
+        
+        .emotion-link {
+             transition: color 0.3s ease;
+         }
+         /* 统一列表字体和字体大小 */
+         ul {
+             font-family: Noto Sans, sans-serif; /* 统一字体 */
+             font-size: 1em; /* 统一字体大小 */
+         }
+        
+
     </style>
 </head>
 <body>
+
     <div class="top-nav">
-        <div class="logo">Data Video Climax</div>
+        <div class="logo">At the Peak: Guidelines for Creating Climaxes in Data Videos</div>
         <div class="nav-links">
             <a href="#home">Home</a>
-            <a href="#gallery-test">Gallery</a>
-            <a href="#storyboard-test">Storyboard</a>
+            <!--<a href="#gallery-test可跳转页面">Gallery</a>
+            <a href="#storyboard-test可跳转页面">Storyboard</a>
             <!-- 删除-test可跳转页面 -->
             <script>
                 document.querySelector('a[href="#gallery"]').addEventListener('click', function(e) {
@@ -163,7 +182,8 @@
     </script>
 
     <div class="side-nav">
-        <a href="#sadness" class="emotion-link" data-color="#080357">Sadness</a>
+        <a href="#Intro" class="emotion-link" data-color="#ffffff">Intro</a>
+        <a href="#sadness" class="emotion-link" data-color="#080357" data-bg="images/sadness-bg.png">Sadness</a>
         <a href="#anticipation" class="emotion-link" data-color="#D6FFB7">Anticipation</a>
         <a href="#fear" class="emotion-link" data-color="#800080">Fear</a>
         <a href="#anger" class="emotion-link" data-color="#c1121f">Anger</a>
@@ -191,14 +211,32 @@
     </script>
 
 
+
     <div class="main">
+        
+        <section id="Intro" style="text-align: center; padding: 80px 0; position: relative;">
+            <h2 style="font-size: larger; text-transform: uppercase; font-weight: bold; background: linear-gradient(to right, #fdb4cf, #00bfff); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">AT THE PEAK:GUIDELINES FOR CLIMAX IN DATA VIDEOS</h2>
+            <p style="text-align: justify; font-family: Segoe UI; font-size: 0.6em;">
+                Data videos are becoming a prominent medium in society and academia, especially for conveying complex information through narrative structures. 
+                However, there is still limited understanding of how to design the narrative climaxes in these videos to maximize emotional engagement and impact. 
+                To address this gap, our work leverages emotional theory to develop comprehensive guidelines for crafting emotionally resonant climaxes in data videos. 
+                We analyzed 96 data video climaxes, categorizing them into eight emotional types based on Plutchik’s model of basic emotions. 
+                From this analysis, we formulated 40 guidelines for enhancing narrative climaxes. 
+                To validate these guidelines, we conducted a user study where 32 participants designed data video climaxes with and without them. 
+                Evaluations by 4 experts and 20 general audience members revealed that climaxes created with the guidelines were more emotionally engaging, impactful, and memorable. 
+                Participants also praised the guidelines' clarity and practicality in the design process.
+            </p>
+            <img src="images/head.png" alt="Intro Image" style="width: 80%; height: auto; position: relative; margin-top: 20px;" />
+        </section>
+
         <section id="sadness">
             <h2 style="color: #080357;">Sadness</h2>
             <!-- 7个卡片 -->
             <div class="card">
                 <div class="card-inner">
                     <div class="card-front" style="background-color: #080357;">
-                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong>G1.1 Distancing by Pulling Away</strong></p>
+                        <img src="storyboard/g1.1.png" alt="G1.1 Distancing by Pulling Away" style="width: 100%; height: auto; margin-bottom: 15px; border: 2px solid #080357; box-sizing: border-box;">
+                        <p style="color: #ffffff; font-size: 1em; font-weight: bold;">G1.1 Distancing by Pulling Away</p>
                     </div>
                     <div class="card-back">
                         <video controls style="width: 100%; height: auto;">
@@ -219,7 +257,8 @@
             <div class="card">
                 <div class="card-inner">
                     <div class="card-front" style="background-color: #080357;">
-                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong>G1.2 Sadness Echo</strong></p>
+                        <img src="storyboard/g1.2.png" alt="G1.2 Sadness Echo" style="width: 100%; height: auto; margin-bottom: 15px; border: 2px solid #080357; box-sizing: border-box;">
+                        <p style="color: #ffffff; font-size: 1em; font-weight: bold;">G1.2 Sadness Echo</p>
                     </div>
                     <div class="card-back">
                         <video controls style="width: 100%; height: auto;">
@@ -228,7 +267,7 @@
                             您的浏览器不支持 HTML5 视频。
                             <a href="video/G1-2-悲伤缓影.mp4">下载视频</a>
                         </video>
-                        <ul style="text-align: left; list-style-type: none; padding-left: 15px; font-size: 0.000000008em; font-family: system-ui; serif; margin-top: 2px; color: #080357;">
+                        <ul style="text-align: left; list-style-type: none; padding-left: 15px; font-size: 0.1em; font-family: system-ui; serif; margin-top: 2px; color: #080357;">
                             <li><strong>✏️As the data, exemplified by charts indicating economic recession, demonstrate a decline,
                                 employ camera movement to trace the trajectory of the data, effectively creating a visual sensation of descending. This
                                 technique metaphorically represents the fall, enhancing the viewer's perception of decline.</strong></li>
@@ -243,9 +282,10 @@
             <div class="card">
                 <div class="card-inner">
                     <div class="card-front" style="background-color: #080357;">
-                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong>G1.3.1 Cool Colors for
-                            Emotion</strong></p>
+                        <img src="storyboard/g1.3.1.png" alt="G1.3.1 Cool Colors for Emotion" style="width: 100%; height: auto; margin-bottom: 15px; border: 2px solid #080357; box-sizing: border-box;">
+                        <p style="color: #ffffff; font-size: 1em; font-weight: bold;">G1.3.1 Cool Colors for Emotion</p>
                     </div>
+
                     <div class="card-back">
                         <video controls style="width: 100%; height: auto;">
                             <source src="video/G1-3-1冷色调表达情感.mp4" type="video/mp4">
@@ -266,8 +306,10 @@
             <div class="card">
                 <div class="card-inner">
                     <div class="card-front" style="background-color: #080357;">
-                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong> G1.3.2 Contrasting Colors and High Saturation</strong></p>
+                        <img src="storyboard/g1.3.2.png" alt="G1.3.2 Contrasting Colors and High Saturation" style="width: 100%; height: auto; margin-bottom: 15px; border: 2px solid #080357; box-sizing: border-box;">
+                        <p style="color: #ffffff; font-size: 1em; font-weight: bold;">G1.3.2 Contrasting Colors and High Saturation</p>
                     </div>
+    
                     <div class="card-back">
                         <video controls style="width: 100%; height: auto;">
                             <source src="video/G1.3.2 对比色和高饱和度.mp4" type="video/mp4">
@@ -288,8 +330,10 @@
             <div class="card">
                 <div class="card-inner">
                     <div class="card-front" style="background-color: #080357;">
-                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong> G1.3.3 Consistency in Color Depth and Emotional Semantics</strong></p>
+                        <img src="storyboard/g1.3.3.png" alt="G1.3.3 Consistency in Color Depth and Emotional Semantics" style="width: 100%; height: auto; margin-bottom: 15px; border: 2px solid #080357; box-sizing: border-box;">
+                        <p style="color: #ffffff; font-size: 1em; font-weight: bold;">G1.3.3 Consistency in Color Depth and Emotional Semantics</p>
                     </div>
+
                     <div class="card-back">
                         <video controls style="width: 100%; height: auto;">
                             <source src="video/G1.3.3 色彩深度和情感语义的一致性.mp4" type="video/mp4">
@@ -309,8 +353,10 @@
             <div class="card">
                 <div class="card-inner">
                     <div class="card-front" style="background-color: #080357;">
-                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong>G1.4 Memory Loop </strong></p>
+                        <img src="storyboard/g1.4.png" alt="G1.4 Memory Loop" style="width: 100%; height: auto; margin-bottom: 15px; border: 2px solid #080357; box-sizing: border-box;">
+                        <p style="color: #ffffff; font-size: 1em; font-weight: bold;">G1.4 Memory Loop</p>
                     </div>
+    
                     <div class="card-back">
                         <video controls style="width: 100%; height: auto;">
                             <source src="video/G1.4 回忆循环.mp4" type="video/mp4">
@@ -321,7 +367,7 @@
                         <ul style="text-align: left; list-style-type: none; padding-left: 15px; font-size: 0.000000008em; font-family: system-ui; serif; margin-top: 2px; color: #080357;">
                             <li><strong>✏️Combine real news clips, historical archive images, and animated data charts to tell a
                                 sad story, such as the impacts of war, natural disasters, or economic crises.</strong></li>                            <li><strong>🔊Enhance the emotional depth of multimedia
-                                elements with on-site recordings, sad background music, and related sound effects, such as crying or heartbeat sounds.</strong></li>
+                                elements with on-site recordings, sad background music, and related sound effects, such as crying or heartbeat sounds</strong></li>
                         </ul>
                     </div>
                 </div>
@@ -329,7 +375,8 @@
             <div class="card">
                 <div class="card-inner">
                     <div class="card-front" style="background-color: #080357;">
-                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong>G1.5 Data Point Loop</strong></p>
+                        <img src="storyboard/g1.5.png" alt="G1.5 Data Point Loop" style="width: 100%; height: auto; margin-bottom: 15px; border: 2px solid #080357; box-sizing: border-box;">
+                        <p style="color: #ffffff; font-size: 1em; font-weight: bold;">G1.5 Data Point Loop</p>
                     </div>
                     <div class="card-back">
                         <video controls style="width: 100%; height: auto;">
@@ -350,12 +397,14 @@
         </section>
 
         <section id="anticipation">
-            <h2 style="color: #D6FFB7;">Anticipation</h2>
+            <h2 style="color: #6bc76f;">Anticipation</h2>
             <div class="card">
                 <div class="card-inner">
                     <div class="card-front" style="background-color: #D6FFB7;">
-                        <p style="text-align: center; font-size: 1em; color: #000000; margin-bottom: 5px; margin-top: 180px;"><strong>G2.1 Anticipatory Action </strong></p>
+                        <img src="storyboard/g2.1.png" alt="G2.1 Anticipatory Action" style="width: 100%; height: auto; margin-bottom: 15px; border: 2px solid #D6FFB7; box-sizing: border-box;">
+                        <p style="color: #000000; font-size: 1em; font-weight: bold;">G2.1 Anticipatory Action</p>
                     </div>
+
                     <div class="card-back">
                         <video controls style="width: 100%; height: auto;">
                             <source src="video/G2.1 前瞻动作.mp4" type="video/mp4">
@@ -376,7 +425,8 @@
             <div class="card">
                 <div class="card-inner">
                     <div class="card-front" style="background-color: #D6FFB7;">
-                        <p style="text-align: center; font-size: 1em; color: #000000; margin-bottom: 5px; margin-top: 180px;"><strong>G2.2 Dynamic Prediction</strong></p>
+                        <img src="storyboard/g2.2.png" alt="G2.2 Dynamic Prediction" style="width: 100%; height: auto; margin-bottom: 15px; border: 2px solid #D6FFB7; box-sizing: border-box;">
+                        <p style="color: #000000; font-size: 1em; font-weight: bold;">G2.2 Dynamic Prediction</p>
                     </div>
                     <div class="card-back">
                         <video controls style="width: 100%; height: auto;">
@@ -397,8 +447,10 @@
             <div class="card">
                 <div class="card-inner">
                     <div class="card-front" style="background-color: #D6FFB7;">
-                        <p style="text-align: center; font-size: 1em; color: #000000; margin-bottom: 5px; margin-top: 180px;"><strong> G2.3.1 Use bright and
-                            high-contrast colors</strong></p>
+                        <img src="storyboard/g2.3.1.png" alt="G2.3.1 Use bright and
+                        high-contrast colors" style="width: 100%; height: auto; margin-bottom: 15px; border: 2px solid #D6FFB7; box-sizing: border-box;">
+                        <p style="color: #000000; font-size: 1em; font-weight: bold;">G2.3.1 Use bright and
+                            high-contrast colors</p>
                     </div>
                     <div class="card-back">
                         <video controls style="width: 100%; height: auto;">
@@ -420,7 +472,8 @@
             <div class="card">
                 <div class="card-inner">
                     <div class="card-front" style="background-color: #D6FFB7;">
-                        <p style="text-align: center; font-size: 1em; color: #000000; margin-bottom: 5px; margin-top: 180px;"><strong>G2.3.2 Dynamic color changes and symbolic meanings</strong></p>
+                        <img src="storyboard/g2.3.2.png" alt="G2.3.2 Dynamic color changes and symbolic meanings" style="width: 100%; height: auto; margin-bottom: 15px; border: 2px solid #D6FFB7; box-sizing: border-box;">
+                        <p style="color: #000000; font-size: 1em; font-weight: bold;">G2.3.2 Dynamic color changes and symbolic meanings</p>
                     </div>
                     <div class="card-back">
                         <video controls style="width: 100%; height: auto;">
@@ -443,7 +496,8 @@
             <div class="card">
                 <div class="card-inner">
                     <div class="card-front" style="background-color: #D6FFB7;">
-                        <p style="text-align: center; font-size: 1em; color: #000000; margin-bottom: 5px; margin-top: 180px;"><strong>G2.4 Future Symbols</strong></p>
+                        <img src="storyboard/g2.4.png" alt="G2.4 Future Symbols" style="width: 100%; height: auto; margin-bottom: 15px; border: 2px solid #D6FFB7; box-sizing: border-box;">
+                        <p style="color: #000000; font-size: 1em; font-weight: bold;">G2.4 Future Symbols</p>
                     </div>
                     <div class="card-back">
                         <video controls style="width: 100%; height: auto;">
@@ -463,8 +517,10 @@
             </div>
             <div class="card">
                 <div class="card-inner">
+
                     <div class="card-front" style="background-color: #D6FFB7;">
-                        <p style="text-align: center; font-size: 1em; color: #000000; margin-bottom: 5px; margin-top: 180px;"><strong>G2.5 Narrative Revelation</strong></p>
+                        <img src="storyboard/g2.5.png" alt="G2.5 Narrative Revelation" style="width: 100%; height: auto; margin-bottom: 15px; border: 2px solid #D6FFB7; box-sizing: border-box;">
+                        <p style="color: #000000; font-size: 1em; font-weight: bold;">G2.5 Narrative Revelation</p>
                     </div>
                     <div class="card-back">
                         <video controls style="width: 100%; height: auto;">
@@ -489,7 +545,8 @@
             <div class="card">
                 <div class="card-inner">
                     <div class="card-front" style="background-color: #392f5a;">
-                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong>G3.1 Imminent Threat</strong></p>
+                        <img src="storyboard/g3.1.png" alt="G3.1 Imminent Threat" style="width: 100%; height: auto; margin-bottom: 15px; border: 2px solid #392f5a; box-sizing: border-box;">
+                        <p style="color: #ffffff; font-size: 1em; font-weight: bold;">G3.1 Imminent Threat</p>
                     </div>
                     <div class="card-back">
                         <video controls style="width: 100%; height: auto;">
@@ -511,7 +568,8 @@
             <div class="card">
                 <div class="card-inner">
                     <div class="card-front" style="background-color: #392f5a;">
-                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong>G3.2 Shaking Tension</strong></p>
+                        <img src="storyboard/g3.2.png" alt="G3.2 Shaking Tension" style="width: 100%; height: auto; margin-bottom: 15px; border: 2px solid #392f5a; box-sizing: border-box;">
+                        <p style="color: #ffffff; font-size: 1em; font-weight: bold;">G3.2 Shaking Tension</p>
                     </div>
                     <div class="card-back">
                         <video controls style="width: 100%; height: auto;">
@@ -532,8 +590,8 @@
             <div class="card">
                 <div class="card-inner">
                     <div class="card-front" style="background-color: #392f5a;">
-                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong>G3.3.1 Cold Color Fear
-                            Visual Effects</strong></p>
+                        <img src="storyboard/g3.3.1.png" alt="G3.3.1 Cold Color Fear Visual Effects" style="width: 100%; height: auto; margin-bottom: 15px; border: 2px solid #392f5a; box-sizing: border-box;">
+                        <p style="color: #ffffff; font-size: 1em; font-weight: bold;">G3.3.1 Cold Color Fear Visual Effects</p>
                     </div>
                     <div class="card-back">
                         <video controls style="width: 100%; height: auto;">
@@ -554,14 +612,15 @@
             <div class="card">
                 <div class="card-inner">
                     <div class="card-front" style="background-color: #392f5a;">
-                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong>G3.3.2 Dynamic Elements and Visual Impact</strong></p>
+                        <img src="storyboard/g3.3.2.png" alt="G3.3.2 Dynamic Elements and Visual Impact" style="width: 100%; height: auto; margin-bottom: 15px; border: 2px solid #392f5a; box-sizing: border-box;">
+                        <p style="color: #ffffff; font-size: 1em; font-weight: bold;">G3.3.2 Dynamic Elements and Visual Impact</p>
                     </div>
                     <div class="card-back">
                         <video controls style="width: 100%; height: auto;">
-                            <source src="video/G2.3.2]色彩的动态变化和象征意义.mp4" type="video/mp4">
-                            <source src="video/G2.3.2]色彩的动态变化和象征意义.webm" type="video/webm">
+                            <source src="video/G3.3.2-动态元素与视觉冲击.mp4" type="video/mp4">
+                            <source src="video/G3.3.2-动态元素与视觉冲击.webm" type="video/webm">
                             您的浏览器不支持 HTML5 视频。
-                            <a href="video/G2.3.2]色彩的动态变化和象征意义.mp4">下载视频</a>
+                            <a href="video/G3.3.2-动态元素与视觉冲击.mp4">下载视频</a>
                         </video>
                         <ul style="text-align: left; list-style-type: none; padding-left: 15px; font-size: 0.000000008em; font-family: system-ui; serif; margin-top: 2px; color: #800080;">
                             <li><strong>✏️Display the growth and urgency of threats
@@ -575,7 +634,8 @@
             <div class="card">
                 <div class="card-inner">
                     <div class="card-front" style="background-color: #392f5a;">
-                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong>G3.4 Shadow Flickering</strong></p>
+                        <img src="storyboard/g3.4.png" alt="G3.4 Shadow Flickering" style="width: 100%; height: auto; margin-bottom: 15px; border: 2px solid #392f5a; box-sizing: border-box;">
+                        <p style="color: #ffffff; font-size: 1em; font-weight: bold;">G3.4 Shadow Flickering</p>
                     </div>
                     <div class="card-back">
                         <video controls style="width: 100%; height: auto;">
@@ -596,7 +656,8 @@
             <div class="card">
                 <div class="card-inner">
                     <div class="card-front" style="background-color: #392f5a;">
-                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong>G3.5 Threat Amplification</strong></p>
+                        <img src="storyboard/g3.5.png" alt="G3.5 Threat Amplification" style="width: 100%; height: auto; margin-bottom: 15px; border: 2px solid #392f5a; box-sizing: border-box;">
+                        <p style="color: #ffffff; font-size: 1em; font-weight: bold;">G3.5 Threat Amplification</p>
                     </div>
                     <div class="card-back">
                         <video controls style="width: 100%; height: auto;">
@@ -621,8 +682,9 @@
             <div class="card">
                 <div class="card-inner">
                     <div class="card-front" style="background-color: #780000;">
-                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong>G4.1.1 Use of Red and High-
-                            Contrast Text</strong></p>
+                        <img src="storyboard/g4.1.1.png" alt="G4.1.1 Use of Red and High-
+                        Contrast Text" style="width: 100%; height: auto; margin-bottom: 15px; border: 2px solid #780000; box-sizing: border-box;">
+                        <p style="color: #ffffff; font-size: 1em; font-weight: bold;">G4.1.1 Use of Red and High-Contrast Text</p>
                     </div>
                     <div class="card-back">
                         <video controls style="width: 100%; height: auto;">
@@ -642,7 +704,8 @@
             <div class="card">
                 <div class="card-inner">
                     <div class="card-front" style="background-color: #780000;">
-                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong>G4.1.2 High Saturation Base Colors and Dynamic Color Changes</strong></p>
+                        <img src="storyboard/g4.1.2.png" alt="G4.1.2 High Saturation Base Colors and Dynamic Color Changes" style="width: 100%; height: auto; margin-bottom: 15px; border: 2px solid #780000; box-sizing: border-box;">
+                        <p style="color: #ffffff; font-size: 1em; font-weight: bold;">G4.1.2 High Saturation Base Colors and Dynamic Color Changes</p>
                     </div>
                     <div class="card-back">
                         <video controls style="width: 100%; height: auto;">
@@ -664,7 +727,8 @@
             <div class="card">
                 <div class="card-inner">
                     <div class="card-front" style="background-color: #780000;">
-                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong>G4.2 Visual Impact</strong></p>
+                        <img src="storyboard/g4.2.png" alt="G4.2 Visual Impact" style="width: 100%; height: auto; margin-bottom: 15px; border: 2px solid #780000; box-sizing: border-box;">
+                        <p style="color: #ffffff; font-size: 1em; font-weight: bold;">G4.2 Visual Impact</p>
                     </div>
                     <div class="card-back">
                         <video controls style="width: 100%; height: auto;">
@@ -685,7 +749,8 @@
             <div class="card">
                 <div class="card-inner">
                     <div class="card-front" style="background-color: #780000;">
-                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong>G4.3 Dynamic Anger</strong></p>
+                        <img src="storyboard/g4.3.png" alt="G4.3 Dynamic Anger" style="width: 100%; height: auto; margin-bottom: 15px; border: 2px solid #780000; box-sizing: border-box;">
+                        <p style="color: #ffffff; font-size: 1em; font-weight: bold;">G4.3 Dynamic Anger</p>
                     </div>
                     <div class="card-back">
                         <video controls style="width: 100%; height: auto;">
@@ -706,7 +771,8 @@
             <div class="card">
                 <div class="card-inner">
                     <div class="card-front" style="background-color: #780000;">
-                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong>G4.4 Layering Elements</strong></p>
+                        <img src="storyboard/g4.4.png" alt="G4.4 Layering Elements" style="width: 100%; height: auto; margin-bottom: 15px; border: 2px solid #780000; box-sizing: border-box;">
+                        <p style="color: #ffffff; font-size: 1em; font-weight: bold;">G4.4 Layering Elements</p>
                     </div>
                     <div class="card-back">
                         <video controls style="width: 100%; height: auto;">
@@ -731,7 +797,8 @@
             <div class="card">
                 <div class="card-inner">
                     <div class="card-front" style="background-color: #F2CC8F;">
-                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong>G5.1 Vibrant Color Utilization</strong></p>
+                        <img src="storyboard/g5.1.png" alt="G5.1 Vibrant Color Utilization" style="width: 100%; height: auto; margin-bottom: 15px; border: 2px solid #F2CC8F; box-sizing: border-box;">
+                        <p style="color: #ffffff; font-size: 1em; font-weight: bold;">G5.1 Vibrant Color Utilization</p>
                     </div>
                     <div class="card-back">
                         <video controls style="width: 100%; height: auto;">
@@ -753,7 +820,8 @@
             <div class="card">
                 <div class="card-inner">
                     <div class="card-front" style="background-color: #F2CC8F;">
-                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong>G5.2 Dynamic Data Presentation</strong></p>
+                        <img src="storyboard/g5.2.png" alt="G5.2 Dynamic Data Presentation" style="width: 100%; height: auto; margin-bottom: 15px; border: 2px solid #F2CC8F; box-sizing: border-box;">
+                        <p style="color: #ffffff; font-size: 1em; font-weight: bold;">G5.2 Dynamic Data Presentation</p>
                     </div>
                     <div class="card-back">
                         <video controls style="width: 100%; height: auto;">
@@ -775,7 +843,8 @@
             <div class="card">
                 <div class="card-inner">
                     <div class="card-front" style="background-color: #F2CC8F;">
-                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong>G5.3 Fast Rhythm Shots</strong></p>
+                        <img src="storyboard/g5.3.png" alt="G5.3 Fast Rhythm Shots" style="width: 100%; height: auto; margin-bottom: 15px; border: 2px solid #F2CC8F; box-sizing: border-box;">
+                        <p style="color: #ffffff; font-size: 1em; font-weight: bold;">G5.3 Fast Rhythm Shots</p>
                     </div>
                     <div class="card-back">
                         <video controls style="width: 100%; height: auto;">
@@ -801,7 +870,8 @@
             <div class="card">
                 <div class="card-inner">
                     <div class="card-front" style="background-color: #87CEFA;">
-                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong>G6.1 Tranquil Scanning</strong></p>
+                        <img src="storyboard/g6.1.png" alt="G6.1 Tranquil Scanning" style="width: 100%; height: auto; margin-bottom: 15px; border: 2px solid #87CEFA; box-sizing: border-box;">
+                        <p style="color: #ffffff; font-size: 1em; font-weight: bold;">G6.1 Tranquil Scanning</p>
                     </div>
                     <div class="card-back">
                         <video controls style="width: 100%; height: auto;">
@@ -822,8 +892,8 @@
             <div class="card">
                 <div class="card-inner">
                     <div class="card-front" style="background-color: #87CEFA;">
-                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong>G6.2.1 Integrating
-                            Natural Elements</strong></p>
+                        <img src="storyboard/g6.2.1.png" alt="G6.2.1 Integrating Natural Elements" style="width: 100%; height: auto; margin-bottom: 15px; border: 2px solid #87CEFA; box-sizing: border-box;">
+                        <p style="color: #ffffff; font-size: 1em; font-weight: bold;">G6.2.1 Integrating Natural Elements</p>
                     </div>
                     <div class="card-back">
                         <video controls style="width: 100%; height: auto;">
@@ -844,7 +914,8 @@
             <div class="card">
                 <div class="card-inner">
                     <div class="card-front" style="background-color: #87CEFA;">
-                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong>G6.2.2 Information Differentiation Through Color Depth</strong></p>
+                        <img src="storyboard/g6.2.2.png" alt="G6.2.2 Information Differentiation Through Color Depth" style="width: 100%; height: auto; margin-bottom: 15px; border: 2px solid #87CEFA; box-sizing: border-box;">
+                        <p style="color: #ffffff; font-size: 1em; font-weight: bold;">G6.2.2 Information Differentiation Through Color Depth</p>
                     </div>
                     <div class="card-back">
                         <video controls style="width: 100%; height: auto;">
@@ -866,7 +937,8 @@
             <div class="card">
                 <div class="card-inner">
                     <div class="card-front" style="background-color: #87CEFA;">
-                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong>G6.3 Cyclical or Repetitive Visual Elements</strong></p>
+                        <img src="storyboard/g6.3.png" alt="G6.3 Cyclical or Repetitive Visual Elements" style="width: 100%; height: auto; margin-bottom: 15px; border: 2px solid #87CEFA; box-sizing: border-box;">
+                        <p style="color: #ffffff; font-size: 1em; font-weight: bold;">G6.3 Cyclical or Repetitive Visual Elements</p>
                     </div>
                     <div class="card-back">
                         <video controls style="width: 100%; height: auto;">
@@ -892,7 +964,8 @@
             <div class="card">
                 <div class="card-inner">
                     <div class="card-front" style="background-color: #ff771c;">
-                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong>G7.1 Sudden Visual Changes</strong></p>
+                        <img src="storyboard/g7.1.png" alt="G7.1 Sudden Visual Changes" style="width: 100%; height: auto; margin-bottom: 15px; border: 2px solid #ff771c; box-sizing: border-box;">
+                        <p style="color: #ffffff; font-size: 1em; font-weight: bold;">G7.1 Sudden Visual Changes</p>
                     </div>
                     <div class="card-back">
                         <video controls style="width: 100%; height: auto;">
@@ -913,7 +986,8 @@
             <div class="card">
                 <div class="card-inner">
                     <div class="card-front" style="background-color: #ff771c;">
-                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong>G7.2 Color Burst</strong></p>
+                        <img src="storyboard/g7.2.png" alt="G7.2 Color Burst" style="width: 100%; height: auto; margin-bottom: 15px; border: 2px solid #ff771c; box-sizing: border-box;">
+                        <p style="color: #ffffff; font-size: 1em; font-weight: bold;">G7.2 Color Burst</p>
                     </div>
                     <div class="card-back">
                         <video controls style="width: 100%; height: auto;">
@@ -935,7 +1009,8 @@
             <div class="card">
                 <div class="card-inner">
                     <div class="card-front" style="background-color: #ff771c;">
-                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong>G7.3 Contrary Data Trends</strong></p>
+                        <img src="storyboard/g7.3.png" alt="G7.3 Contrary Data Trends" style="width: 100%; height: auto; margin-bottom: 15px; border: 2px solid #ff771c; box-sizing: border-box;">
+                        <p style="color: #ffffff; font-size: 1em; font-weight: bold;">G7.3 Contrary Data Trends</p>
                     </div>
                     <div class="card-back">
                         <video controls style="width: 100%; height: auto;">
@@ -956,7 +1031,8 @@
             <div class="card">
                 <div class="card-inner">
                     <div class="card-front" style="background-color: #ff771c;">
-                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong>G7.4 Unexpected Visual Elements</strong></p>
+                        <img src="storyboard/g7.4.png" alt="G7.4 Unexpected Visual Elements" style="width: 100%; height: auto; margin-bottom: 15px; border: 2px solid #ff771c; box-sizing: border-box;">
+                        <p style="color: #ffffff; font-size: 1em; font-weight: bold;">G7.4 Unexpected Visual Elements</p>
                     </div>
                     <div class="card-back">
                         <video controls style="width: 100%; height: auto;">
@@ -983,7 +1059,8 @@
             <div class="card">
                 <div class="card-inner">
                     <div class="card-front" style="background-color: #452e1e;">
-                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong>G8.1 Negative Focus </strong></p>
+                        <img src="storyboard/g8.1.png" alt="G8.1 Negative Focus" style="width: 100%; height: auto; margin-bottom: 15px; border: 2px solid #452e1e; box-sizing: border-box;">
+                        <p style="color: #ffffff; font-size: 1em; font-weight: bold;">G8.1 Negative Focus</p>
                     </div>
                     <div class="card-back">
                         <video controls style="width: 100%; height: auto;">
@@ -1004,7 +1081,8 @@
             <div class="card">
                 <div class="card-inner">
                     <div class="card-front" style="background-color: #452e1e;">
-                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong>G8.2 Dynamic Disgust</strong></p>
+                        <img src="storyboard/g8.2.png" alt="G8.2 Dynamic Disgust" style="width: 100%; height: auto; margin-bottom: 15px; border: 2px solid #452e1e; box-sizing: border-box;">
+                        <p style="color: #ffffff; font-size: 1em; font-weight: bold;">G8.2 Dynamic Disgust</p>
                     </div>
                     <div class="card-back">
                         <video controls style="width: 100%; height: auto;">
@@ -1025,7 +1103,8 @@
             <div class="card">
                 <div class="card-inner">
                     <div class="card-front" style="background-color: #452e1e;">
-                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong>G8.3 Discomfort Color Change</strong></p>
+                        <img src="storyboard/g8.3.png" alt="G8.3 Discomfort Color Change" style="width: 100%; height: auto; margin-bottom: 15px; border: 2px solid #452e1e; box-sizing: border-box;">
+                        <p style="color: #ffffff; font-size: 1em; font-weight: bold;">G8.3 Discomfort Color Change</p>
                     </div>
                     <div class="card-back">
                         <video controls style="width: 100%; height: auto;">
@@ -1048,7 +1127,8 @@
             <div class="card">
                 <div class="card-inner">
                     <div class="card-front" style="background-color: #452e1e;">
-                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong>G8.4 Mixed Media</strong></p>
+                        <img src="storyboard/g8.4.png" alt="G8.4 Mixed Media" style="width: 100%; height: auto; margin-bottom: 15px; border: 2px solid #452e1e; box-sizing: border-box;">
+                        <p style="color: #ffffff; font-size: 1em; font-weight: bold;">G8.4 Mixed Media</p>
                     </div>
                     <div class="card-back">
                         <video controls style="width: 100%; height: auto;">
@@ -1069,7 +1149,8 @@
             <div class="card">
                 <div class="card-inner">
                     <div class="card-front" style="background-color: #452e1e;">
-                        <p style="text-align: center; font-size: 1em; color: #ffffff; margin-bottom: 5px; margin-top: 180px;"><strong>G8.5 Incremental Elements</strong></p>
+                        <img src="storyboard/g8.5.png" alt="G8.5 Incremental Elements" style="width: 100%; height: auto; margin-bottom: 15px; border: 2px solid #452e1e; box-sizing: border-box;">
+                        <p style="color: #ffffff; font-size: 1em; font-weight: bold;">G8.5 Incremental Elements</p>
                     </div>
                     <div class="card-back">
                         <video controls style="width: 100%; height: auto;">
