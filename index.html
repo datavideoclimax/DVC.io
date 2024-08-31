@@ -33,7 +33,7 @@
         }
         
         .top-nav.transparent {
-            background: linear-gradient(to right, #ffc1d7d0, rgba(183, 214, 253, 0.815));
+            background: linear-gradient(to right, #ffc1d7, rgba(169, 208, 255, 0.632));
         }
         
         .top-nav .logo {
@@ -62,7 +62,7 @@
         }
         .side-nav {
             height: 100%;
-            width: 180px;
+            width: 200px;
             position: fixed;
             z-index: 1;
             top: 60px;
@@ -72,19 +72,20 @@
             background-position: left ;
             background-repeat: no-repeat;
             overflow-x: hidden;
-            padding-top: 20px;
+            padding-top: 35px;
         }
         
         .side-nav a {
             padding: 6px 8px 6px 16px;
             text-decoration: none;
-            font-size: 25px;
-            color: #ffffffc7;
+            font-size: 22px;
+            color: #f4f4ffc7;
             display: block;
+            font-family: 'Segoe UI', sans-serif;
         }
         
         .side-nav a:hover {
-            color: #fff9f9;
+            color: #ffffff;
         }
         
         .main {
@@ -142,8 +143,21 @@
          /* 统一列表字体和字体大小 */
          ul {
              font-family: Noto Sans, sans-serif; /* 统一字体 */
-             font-size: 1em; /* 统一字体大小 */
+             font-size: 0.1em; /* 统一字体大小 */
          }
+
+         .circle {
+    width: 15px; /* 圆形的宽度 */
+    height: 15px; /* 圆形的高度 */
+    border-radius: 50%; /* 使其成为圆形 */
+    background-color: currentColor; /* 使用当前文本颜色 */
+    display: inline-block; /* 使其在行内显示 */
+    margin-right: 6px; /* 圆形与文本之间的间距 */
+        }
+         
+
+        /* ... existing code ... */
+
         
 
     </style>
@@ -179,18 +193,51 @@
                 nav.classList.remove('transparent');
             }
         });
-    </script>
 
+        window.addEventListener('scroll', function() {
+        var sections = document.querySelectorAll('section');
+        var sideNavLinks = document.querySelectorAll('.side-nav a');
+
+        sections.forEach((section, index) => {
+            var rect = section.getBoundingClientRect();
+            if (rect.top >= 0 && rect.top < window.innerHeight) {
+                sideNavLinks.forEach(link => link.style.color = ''); // 重置颜色
+                sideNavLinks[index].style.color = section.querySelector('h2').style.color; // 设置对应颜色
+            }
+        });
+    });
+
+    
+    </script>
     <div class="side-nav">
-        <a href="#Intro" class="emotion-link" data-color="#ffffff">Intro</a>
-        <a href="#sadness" class="emotion-link" data-color="#080357" data-bg="images/sadness-bg.png">Sadness</a>
-        <a href="#anticipation" class="emotion-link" data-color="#D6FFB7">Anticipation</a>
-        <a href="#fear" class="emotion-link" data-color="#800080">Fear</a>
-        <a href="#anger" class="emotion-link" data-color="#c1121f">Anger</a>
-        <a href="#joy" class="emotion-link" data-color="#FDDA5B">Joy</a>
-        <a href="#trust" class="emotion-link" data-color="#87CEFA">Trust</a>
-        <a href="#surprise" class="emotion-link" data-color="#ff771c">Surprise</a>
-        <a href="#disgust" class="emotion-link" data-color="#8B4513">Disgust</a>
+        <a href="#Intro" class="emotion-link" data-color="#000000" style="font-family: Segoe UI, sans-serif; font-size: 1.7rem; font-weight: bold !important;">
+            Introduction
+        </a>
+        <a href="#sadness" class="emotion-link" data-color="#080357">
+            <span class="circle"></span>Sadness
+        </a>
+        <a href="#anticipation" class="emotion-link" data-color="#D6FFB7">
+            <span class="circle"></span>Anticipation
+        </a>
+        <a href="#fear" class="emotion-link" data-color="#800080">
+            <span class="circle"></span>Fear
+        </a>
+        <a href="#anger" class="emotion-link" data-color="#c1121f">
+            <span class="circle"></span>Anger
+        </a>
+        <a href="#joy" class="emotion-link" data-color="#FDDA5B">
+            <span class="circle"></span>Joy
+        </a>
+        <a href="#trust" class="emotion-link" data-color="#87CEFA">
+            <span class="circle"></span>Trust
+        </a>
+        <a href="#surprise" class="emotion-link" data-color="#ff771c">
+            <span class="circle"></span>Surprise
+        </a>
+        <a href="#disgust" class="emotion-link" data-color="#8B4513">
+            <span class="circle"></span>Disgust
+        </a>
+        
     </div>
 
     <style>
@@ -208,6 +255,38 @@
                 this.style.color = '';
             });
         });
+
+        // 主列表点击事件
+        document.querySelector('a[href="#sadness"]').addEventListener('click', function(e) {
+            e.preventDefault();
+            const subList = document.getElementById('sadness-list');
+            subList.style.display = subList.style.display === 'none' ? 'block' : 'none';
+            // 跳转到对应的section
+            document.querySelector('#sadness').scrollIntoView({ behavior: 'smooth' });
+        });
+
+        // 子链接点击事件
+        document.querySelectorAll('.sub-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                document.querySelector(targetId).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        // 监听滚动事件以改变主列表颜色
+        window.addEventListener('scroll', function() {
+            var sections = document.querySelectorAll('section');
+            var sideNavLinks = document.querySelectorAll('.side-nav .emotion-link');
+
+            sections.forEach((section, index) => {
+                var rect = section.getBoundingClientRect();
+                if (rect.top >= 0 && rect.top < window.innerHeight) {
+                    sideNavLinks.forEach(link => link.style.color = ''); // 重置颜色
+                    sideNavLinks[index].style.color = sideNavLinks[index].getAttribute('data-color'); // 设置对应颜色
+                }
+            });
+        });
     </script>
 
 
@@ -215,8 +294,8 @@
     <div class="main">
         
         <section id="Intro" style="text-align: center; padding: 80px 0; position: relative;">
-            <h2 style="font-size: larger; text-transform: uppercase; font-weight: bold; background: linear-gradient(to right, #fdb4cf, #00bfff); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">AT THE PEAK:GUIDELINES FOR CLIMAX IN DATA VIDEOS</h2>
-            <p style="text-align: justify; font-family: Segoe UI; font-size: 0.6em;">
+            <h2 style="font-size: larger; text-transform: capitalize; font-weight: bold; background: linear-gradient(to right, #fdb4cf, #00bfff); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">At The Peak: Guidelines For Creating Climaxes In Data Videos</h2>
+            <p style="text-align: justify; font-family: Segoe UI; font-size: 0.8em;">
                 Data videos are becoming a prominent medium in society and academia, especially for conveying complex information through narrative structures. 
                 However, there is still limited understanding of how to design the narrative climaxes in these videos to maximize emotional engagement and impact. 
                 To address this gap, our work leverages emotional theory to develop comprehensive guidelines for crafting emotionally resonant climaxes in data videos. 
